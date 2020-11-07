@@ -66,28 +66,32 @@ function App() {
             </Route>
             <Route>
               <Header path="/:path" />
-              <div className={styles.container}>
-                <LeftMenu/>
-                <Route exact path="/signIn">
-                  <SignIn />
-                </Route>
-                <Route exact path="/main">
-                  <Main />
-                </Route>
-                <Route exact path="/rating">
-                  <Rating />
-                </Route>
-                <Route exact path="/activity">
-                  <Activity/>
-                </Route>
-                <Route exact path="/dialogs">
-                  <Dialogs title="Диалоги" />
-                </Route>
-                <Route path="/chat/:id">
-                  <Chat />
-                </Route>
-              </div>
-              {sessionStorage.getItem('x-auth-token') && <Widget />}
+              <Route exact path="/signIn">
+                <SignIn />
+              </Route>
+              {sessionStorage.getItem('x-auth-token') && (
+                <>
+                  <div className={styles.container}>
+                    <LeftMenu/>
+                    <Route exact path="/main">
+                      <Main />
+                    </Route>
+                    <Route exact path="/rating">
+                      <Rating />
+                    </Route>
+                    <Route exact path="/activity">
+                      <Activity/>
+                    </Route>
+                    <Route exact path="/dialogs">
+                      <Dialogs title="Диалоги" />
+                    </Route>
+                    <Route path="/chat/:id">
+                      <Chat />
+                    </Route>
+                  </div>
+                  <Widget />
+                </>
+              )}
             </Route>
           </Switch>
       )}
