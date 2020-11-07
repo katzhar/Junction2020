@@ -35,7 +35,7 @@ export default function Preloader({text}) {
   return (
     <div className={classes.root}>
       <div className={classes.text}>{text}</div>
-      <CircularProgress color="secondary" />
+      <CircularProgress style={{ color: '#1891ff' }} />
     </div>
   );
 }

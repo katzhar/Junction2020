@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Button from '../Button'
 import './Login.scss'
 
-export default function Login() {
+export default function Login({ isLoggedIn }) {
     return (
         <div className="login">
             <div className="login__header">
@@ -17,7 +17,7 @@ export default function Login() {
             <div className="login__main">
                 <div className="login__action">
                     <Button type="facebook" subClass="facebook" href="/signIn/facebook" text="Continue with Facebook"/>
-                    <Button type="mail" subClass="mail" href="/signIn" text="SignIn with Mail"/>
+                    <Button type="mail" subClass="mail" href={isLoggedIn ? "/main" : "/signIn"} text="SignIn with Mail"/>
                     <div className="login__alt">
                         Not able to login?
                         <Link to='/' className="red-link">

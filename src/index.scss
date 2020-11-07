@@ -122,7 +122,7 @@ ol {
 .red-link {
   position: relative;
   font-size: 1rem;
-  color: #f62354 !important;
+  color: #1891ff !important;
   font-weight: bold;
 
   &:after {
@@ -132,7 +132,7 @@ ol {
     right: 0;
     bottom: 0;
     height: 1px;
-    background-color: #f62354;
+    background-color: #1891ff;
     border-radius: 12px;
     opacity: 1;
     transition: 0.3s linear;

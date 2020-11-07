@@ -29,23 +29,18 @@ function App() {
   const auth = useSelector((store) => store.auth);
 
   let token = sessionStorage.getItem('x-auth-token');
-
-  const initUserAction = React.useCallback(() => {
-    token && 
-    Object.keys(data).map(item => {
-      localStorage.setItem(item, data[item]);
-    });
-  }, [token]);
+  // const initUserAction = React.useCallback(() => {
+  //   token && 
+  //   Object.keys(data).map(item => {
+  //     localStorage.setItem(item, JSON.stringify(data[item]));
+  //   });
+  // }, [token]);
 
   React.useEffect(() => {
-    if (auth.success === true) {
+    if (token && history.pathname === '/signIn') {
       history.push('/main');
     }
   }, [history, auth]);
-
-  React.useEffect(() => {
-    if (sessionStorage.getItem('x-auth-token')) initUserAction();
-  }, [initUserAction]);
 
   return (
     <main id="main">
@@ -62,35 +57,36 @@ function App() {
       ) : (
           <Switch>
             <Route exact path="/">
-              <Login />
+              <Login isLoggedIn={token} />
             </Route>
             <Route>
               <Header path="/:path" />
-              <div className={styles.container}>
-              <LeftMenu/>
               <Route exact path="/signIn">
-                <SignIn />
+                <SignIn isLoggedIn={token} />
               </Route>
-              <Route exact path="/main">
-                <Main />
-              </Route>
-<<<<<<< Updated upstream
-              <Route exact path="/rating">
-                <Rating />
-              </Route>
-              <Route exact path="/activity">
-                <Activity/>
-            </Route>
-              </div>
-=======
-              <Route exact path="/dialogs">
-                <Dialogs title="Диалоги" />
-              </Route>
-              <Route path="/chat/:id">
-                <Chat />
-              </Route>
-              {sessionStorage.getItem('x-auth-token') && <Widget />}
->>>>>>> Stashed changes
+              {token && (
+                <>
+                  <div className={styles.container}>
+                    <LeftMenu/>
+                    <Route exact path="/main/:id">
+                      <Main />
+                    </Route>
+                    <Route exact path="/rating">
+                      <Rating />
+                    </Route>
+                    <Route exact path="/activity">
+                      <Activity/>
+                    </Route>
+                    <Route exact path="/dialogs">
+                      <Dialogs title="Диалоги" />
+                    </Route>
+                    <Route path="/chat/:id">
+                      <Chat />
+                    </Route>
+                  </div>
+                  <Widget />
+                </>
+              )}
             </Route>
           </Switch>
       )}

@@ -1,0 +1,38 @@
+.container {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  -webkit-box-shadow: -3px 9px 18px -6px rgba(0,0,0,0.62);
+  box-shadow: -3px 9px 18px -6px rgba(0,0,0,0.62);
+}
+
+.middle{
+  display: flex;
+  flex-direction: row;
+}
+
+.right{
+  width: 30%;
+  text-align: center;
+  background: rgba(39, 201, 163, 0.46);
+  color: #3d2727;
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+}
+
+.left{
+  width: 70%;
+  padding: 10px;
+}
+
+.containerIcon{
+ img{
+   object-fit: contain;
+   width: 60px;
+ }
+
+
+}

@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { fetchAuth } from '../../store/actions';
+import { useHistory } from 'react-router-dom';
 
 import { Avatar, Typography, Grid } from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
@@ -17,16 +18,22 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: '#1891ff',
+  },
+  icon: {
+    backgroundColor: '#1891ff',
   },
   typography: {
     fontFamily: 'Montserrat',
   },
 }));
 
-export default function SignIn() {
+export default function SignIn({ isLoggedIn }) {
   const classes = useStyles();
   const dispatch = useDispatch();
+  const history = useHistory();
+
+  isLoggedIn && history.push('/main');
 
   const actionSignIn = useCallback(
     (mail, password, loadingText) => {
@@ -84,7 +91,7 @@ export default function SignIn() {
   return (
     <div className={`${classes.paper} form__block form__block-signIn`}>
       <Avatar className={classes.avatar}>
-        <LockOutlinedIcon />
+        <LockOutlinedIcon className={classes.icon} />
       </Avatar>
       <Typography className={classes.typography} component="h1" variant="h5">
         Sign In

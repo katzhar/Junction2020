@@ -1,56 +1,65 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
+import { data } from '../../data';
+import { Table, Tag} from 'antd';
+import Text from 'antd/lib/typography/Text';
 
-const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
+const columns = [
+  {
+    title: 'place',
+    dataIndex: 'key',
+    key: 'key',
+    render: text => <a>{text}</a>
   },
-});
-
-function createData(place, users, points) {
-  return { place, users, points };
-}
-
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0),
-  createData('Ice cream sandwich', 237, 9.0),
-  createData('Eclair', 262, 16.0),
-  createData('Cupcake', 305, 3.7),
-  createData('Gingerbread', 356, 16.0),
+  {
+    title: 'User',
+    dataIndex: 'name',
+    key: 'name',
+  },
+  {
+    title: 'Scores',
+    dataIndex: 'rating',
+    key: 'rating',
+  },
+  {
+    title: 'Tags',
+    key: 'tags',
+    dataIndex: 'tags',
+    render: tags => (
+      <span>
+        {tags.map(tag => {
+          let color = tag.length > 6 ? 'geekblue' : 'green';
+          if (tag === 'art') {
+            color = 'volcano';
+          }
+          if (tag === 'history') {
+            color = 'orange';
+          }
+          return (
+            <Tag color={color} key={tag}>
+              {tag.toUpperCase()}
+            </Tag>
+          );
+        })}
+      </span>
+    ),
+  }
 ];
-
-export default function Rating() {
-  const classes = useStyles();
-
-  return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Place</TableCell>
-            <TableCell align="right">Users</TableCell>
-            <TableCell align="right">Points</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.name}>
-              <TableCell component="th" scope="row">
-                {row.place}
-              </TableCell>
-              <TableCell align="right">{row.users}</TableCell>
-              <TableCell align="right">{row.points}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-  );
+class Rating extends React.Component {
+  state = {
+    top: 'none',
+    bottom: 'none',
+  };
+  render() {
+    return (
+      <div>
+        <Table
+          columns={columns}
+          dataSource={data.users}
+          pagination={false}
+        />
+      </div>
+    );
+  }
 }
+
+export default Rating;

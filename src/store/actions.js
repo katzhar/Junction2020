@@ -9,6 +9,7 @@ export {
 
 export {
   fetchInitMessages,
+  fetchAddMessage,
   addMessage,
 } from './Messages/actions';
 

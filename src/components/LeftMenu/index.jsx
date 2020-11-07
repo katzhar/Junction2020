@@ -6,7 +6,7 @@ export default function LeftMenu() {
   // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
   return (
     <div className={styles.container}>
-      <Link to="/main">
+      <Link to="/main/5fa69d80ffdd8589ae52c498">
         Profile
       </Link>
       <Link to="/activity">
