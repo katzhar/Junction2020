@@ -1,5 +1,5 @@
 import { notification } from 'antd';
-import { data } from './data';
+import { data } from '../../data';
 export const FETCH_AUTH = 'FETCH_AUTH';
 export const FETCH_AUTH_SUCCESS = 'FETCH_AUTH_SUCCESS';
 export const FETCH_AUTH_FAILED = 'FETCH_AUTH_FAILED';
