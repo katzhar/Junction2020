@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { data } from './data';
 import 'antd/dist/antd.css';
 import styles from './app.module.scss';
@@ -9,11 +10,15 @@ import {
   Login,
   SignIn,
   Header,
-  Preloader
+  Preloader,
+  Dialogs,
+  Chat,
+  Widget
 } from './components/index';
 
 import {
-  Main
+  Main,
+  Rating,
 } from './pages/index';
 import Activity from './pages/Activity';
 import LeftMenu from './components/LeftMenu';
@@ -61,18 +66,32 @@ function App() {
             </Route>
             <Route>
               <Header path="/:path" />
-              <div className={styles.container}>
-              <LeftMenu/>
               <Route exact path="/signIn">
                 <SignIn />
               </Route>
-              <Route exact path="/main">
-                <Main />
-              </Route>
-              <Route exact path="/activity">
-                <Activity/>
-            </Route>
-              </div>
+              {sessionStorage.getItem('x-auth-token') && (
+                <>
+                  <div className={styles.container}>
+                    <LeftMenu/>
+                    <Route exact path="/main">
+                      <Main />
+                    </Route>
+                    <Route exact path="/rating">
+                      <Rating />
+                    </Route>
+                    <Route exact path="/activity">
+                      <Activity/>
+                    </Route>
+                    <Route exact path="/dialogs">
+                      <Dialogs title="Диалоги" />
+                    </Route>
+                    <Route path="/chat/:id">
+                      <Chat />
+                    </Route>
+                  </div>
+                  <Widget />
+                </>
+              )}
             </Route>
           </Switch>
       )}

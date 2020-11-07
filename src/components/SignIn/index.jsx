@@ -116,11 +116,6 @@ export default function SignIn() {
               Forgot password?
             </Link>
           </Grid>
-          <Grid item>
-            <Link className="green-link" to="/signUp">
-              Sign Up
-            </Link>
-          </Grid>
         </Grid>
       </form>
     </div>

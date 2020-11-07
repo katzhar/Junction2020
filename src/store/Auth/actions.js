@@ -36,7 +36,7 @@ export const fetchAuth = (mail, password, loadingText) => async (dispatch) => {
   dispatch(fetchAuthClear());
   dispatch(fetchAuthAction(loadingText));
 
-  if (mail === data.mail && password === data.pass) {
+  if (mail === data['users'][0].email && password === 'Qwerty1!') {
     sessionStorage.setItem('ws-auth-token', 'sesh1234567890');
     sessionStorage.setItem('x-auth-token', 'sesh1234567890');
     setTimeout(() => {
