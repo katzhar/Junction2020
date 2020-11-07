@@ -8,9 +8,8 @@ import styles from './Chat.module.scss';
 
 const Chat = () => {
   const history = useHistory();
-  const [receiverUid, setReceiveUid] = React.useState(parseInt(history.location.pathname.split('/')[2]));
+  const [chatID, setChatID] = React.useState(parseInt(history.location.pathname.split('/')[2]));
   const messages = useSelector((store) => store.messages);
-  const fetchMessages = useSelector((store) => store.fetchMessages);
   const dispatch = useDispatch();
 
   const getMessages = React.useCallback((uid) => {
@@ -18,12 +17,12 @@ const Chat = () => {
   }, [dispatch]);
 
   React.useEffect(() => {
-    setReceiveUid(parseInt(history.location.pathname.split('/')[2]));
+    setChatID(parseInt(history.location.pathname.split('/')[2]));
   }, [history]);
 
   React.useEffect(() => {
-    getMessages(receiverUid);
-  }, [receiverUid, getMessages]);
+    getMessages(chatID);
+  }, [chatID, getMessages]);
 
   React.useEffect(() => {
     document.querySelector('.contentRef').scrollTop = 999999;
@@ -34,10 +33,10 @@ const Chat = () => {
       <div className={styles.ChatContainer}>
         <div className={`contentRef ${styles.ChatContent}`}>
           <div className={styles.Messages}>
-            <MessageList messages={messages} receiver={receiverUid} />
+            <MessageList messages={messages} chat={chatID} />
           </div>
         </div>
-        <ChatForm receiver={receiverUid} />
+        <ChatForm chat={chatID} />
       </div>
     </div>
   )

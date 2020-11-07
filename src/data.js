@@ -5140,145 +5140,210 @@ export const data = {
         "id": "5fa6a7f90444ceb01687b5f4",
         "organazierId": "5fa69d80ffdd8589ae52c498",
         "registered": "Sunday, April 7, 2019 7:24 AM",
-        "title": "enim nostrud"
-      },
+        "title": "Let\'s have a Harry Potter viewing marathon",
+        "body": "Guys, the New Year is coming and I want some magic, on December 28 I invite everyone to see all the parts of Harry Potter! It will be fun!",
+        "type": "film",
+        "participants": ['5', '13', '8']
+},
       {
         "id": "5fa6a7f9f302a3c478845317",
         "organazierId": "5fa69d8015b5411ebe57daa1",
         "registered": "Sunday, December 13, 2015 11:57 PM",
-        "title": "labore cillum"
+        "title": "Book discussion The Idiot By Fyodor Dostoyevsky",
+        "body": "For a long time I was interested in Russian classics and " +
+          "decided to read the book The Idiot By Fyodor Dostoyevsky in 2 weeks. If you are also interested in the topic, I invite you to the discussion on November 21.",
+        "type": "book",
+        "participants": ['1', '12', '22']
       },
       {
         "id": "5fa6a7f9900b22232eeff8eb",
         "organazierId": "5fa69d80c8ea8712e242ce6b",
         "registered": "Thursday, September 24, 2020 12:00 PM",
-        "title": "deserunt eu"
+        "title": "Webinar on Contemporary Art",
+        "body": "On November 11 I will tell you about contemporary art, join us.",
+        "type": "event",
+        "participants": ['17', '9', '12','28','11','22','1','6']
       },
       {
         "id": "5fa6a7f9defa69546e474ea4",
         "organazierId": "5fa69d80c8ea8712e242ce6b",
         "registered": "Thursday, December 1, 2016 2:25 AM",
-        "title": "occaecat excepteur"
+        "title": "Ready to help with Higher Mathematics",
+        "body": "",
+        "type": "ptp",
       },
       {
         "id": "5fa6a7f99f085cdefefe1828",
         "organazierId": "5fa69d80c8ea8712e242ce6b",
         "registered": "Friday, August 23, 2019 7:56 AM",
-        "title": "sit voluptate"
+        "title": "Help tighten up the Spanish language",
+        "body": "",
+        "type": "ptp",
       },
       {
         "id": "5fa6a7f9d6e97b3ec0e15668",
         "organazierId": "5fa69d80ffdd8589ae52c498",
         "registered": "Thursday, December 19, 2019 6:40 AM",
-        "title": "consequat reprehenderit"
+        "title": "Teach basics js",
+        "body": "",
+        "type": "ptp",
       },
       {
         "id": "5fa6a7f9ade841ecd1038168",
         "organazierId": "5fa69d8004951a9f9ba1b5b5",
         "registered": "Friday, December 8, 2017 2:11 AM",
-        "title": "culpa laboris"
+        "title": "Teach basics C++",
+        "body": "",
+        "type": "ptp",
       },
       {
         "id": "5fa6a7f989cd200e2e4ab0ba",
         "organazierId": "5fa69d8015b5411ebe57daa1",
         "registered": "Thursday, October 31, 2019 9:12 PM",
-        "title": "consectetur laboris"
+        "title": "Ready to help with Higher Mathematics",
+        "body": "",
+        "type": "ptp",
       },
       {
         "id": "5fa6a7f93e13d524a606fb59",
         "organazierId": "5fa69d80ffdd8589ae52c498",
         "registered": "Wednesday, May 2, 2018 1:27 PM",
-        "title": "culpa consequat"
+        "title": "Watercolor Drawing Lessons",
+        "body": "If you have long wanted to learn to draw watercolors, then you come to me.",
+        "type": "lessons",
       },
       {
         "id": "5fa6a7f939228bff042574a4",
         "organazierId": "5fa69d8015b5411ebe57daa1",
         "registered": "Sunday, November 4, 2018 6:49 PM",
-        "title": "minim consectetur"
+        "title": "I can teach you how to take pictures",
+        "body": "Experience of photography 5 years",
+        "type": "lessons",
       },
       {
         "id": "5fa6a7f9d971f23fb2b00030",
         "organazierId": "5fa69d80c8ea8712e242ce6b",
         "registered": "Friday, April 29, 2016 1:06 AM",
-        "title": "magna non"
+        "title": "Knitting Lessons",
+        "body": "If you have long wanted to tie socks, but were waiting for a sign, here it is!",
+        "type": "lessons",
       },
       {
         "id": "5fa6a7f9d251315f48b11321",
         "organazierId": "5fa69d80ffdd8589ae52c498",
         "registered": "Thursday, November 3, 2016 6:12 PM",
-        "title": "proident esse"
+        "title": "Lessons Learned how to make Turkish coffee",
+        "body": "Nothing so invigorating as a hot cup of coffee",
+        "type": "lessons",
       },
       {
         "id": "5fa6a7f99bfae4509f9d9e98",
         "organazierId": "5fa69d8015b5411ebe57daa1",
         "registered": "Saturday, May 23, 2020 2:03 PM",
-        "title": "est eu"
+        "title": "Book discussion The Idiot By Fyodor Dostoyevsky",
+        "body": "For a long time I was interested in Russian classics and " +
+          "decided to read the book The Idiot By Fyodor Dostoyevsky in 2 weeks. If you are also interested in the topic, I invite you to the discussion on November 21.",
+        "type": "webinar",
+        "participants": ['1', '12', '22','24','8','3','5']
       },
       {
         "id": "5fa6a7f9d7e28ff048682356",
         "organazierId": "5fa69d80ffdd8589ae52c498",
         "registered": "Tuesday, March 8, 2016 9:06 AM",
-        "title": "enim et"
+        "title": "Lecture on economics",
+        "body": "I will send the program on demand in a chat room",
+        "type": "webinar",
+        "participants": [ '12', '22','24','8','3','5','13']
       },
       {
         "id": "5fa6a7f92c21030ecc2ae795",
         "organazierId": "5fa69d80ffdd8589ae52c498",
         "registered": "Friday, July 1, 2016 3:22 PM",
-        "title": "aliquip proident"
+        "title": "English webinar",
+        "body": "I will send the program on demand in a chat room",
+        "type": "webinar",
+        "participants": [ '22','24','8','3','5','13']
       },
       {
         "id": "5fa6a7f9ac18cd1d67cae0d6",
         "organazierId": "5fa69d8004951a9f9ba1b5b5",
         "registered": "Monday, July 8, 2019 1:13 AM",
-        "title": "consequat ullamco"
+        "title": "Half marathon run",
+        "body": "Guys, let's get ready for the half-marathon together? Join my group in the nike run app. You need to run at least 20 km per week.",
+        "type": "event",
+        "participants": ['17', '9', '12','28','11','22','1','6']
       },
       {
         "id": "5fa6a7f9a668f260e91276d8",
         "organazierId": "5fa69d8015b5411ebe57daa1",
         "registered": "Wednesday, July 31, 2019 4:25 AM",
-        "title": "in voluptate"
+        "title": "Еvening bike ride",
+        "body": "Who lives in my neighborhood, I invite you to go for a ride in the park today.",
+        "type": "event",
+        "participants": ['17', '9', '12','28','11','22','1','6']
       },
       {
         "id": "5fa6a7f94aeb454a4b2f67c9",
         "organazierId": "5fa69d8004951a9f9ba1b5b5",
         "registered": "Wednesday, April 11, 2018 6:51 AM",
-        "title": "esse sint"
+        "title": "Book «Luna: New Moon»",
+        "body": "If you like Ian McDonald and science fiction, I suggest you discuss the book on December 18th.",
+        "type": "book",
+        "participants": ['24', '12', '22']
       },
       {
         "id": "5fa6a7f980d89be7357b0135",
         "organazierId": "5fa69d80c8ea8712e242ce6b",
         "registered": "Wednesday, May 10, 2017 10:20 PM",
-        "title": "sint ex"
+        "title": "Lecture on economics",
+        "body": "I will send the program on demand in a chat room",
+        "type": "webinar",
+        "participants": [ '12', '22','24','8','3','5','13']
       },
       {
         "id": "5fa6a7f95cacf54855ba7940",
         "organazierId": "5fa69d80c8ea8712e242ce6b",
         "registered": "Saturday, June 4, 2016 12:45 AM",
-        "title": "mollit aliqua"
+        "title": "film back to the future",
+        "body": "I will send the program on demand in a chat room",
+        "type": "film",
+        "participants": [ '12', '22','24','8','3','5','13']
+
       },
       {
         "id": "5fa6a7f93c2b10481a232571",
         "organazierId": "5fa69d8004951a9f9ba1b5b5",
         "registered": "Monday, November 17, 2014 2:05 AM",
-        "title": "ex qui"
+        "title": "Ready to help with Higher Mathematics",
+        "body": "",
+        "type": "ptp",
       },
       {
         "id": "5fa6a7f9358ec5cdae874a53",
         "organazierId": "5fa69d8004951a9f9ba1b5b5",
         "registered": "Sunday, March 22, 2020 2:21 AM",
-        "title": "sint consectetur"
+        "title": "Let\'s have a Harry Potter viewing marathon",
+        "body": "Guys, the New Year is coming and I want some magic, on December 28 I invite everyone to see all the parts of Harry Potter! It will be fun!",
+        "type": "film",
+        "participants": ['5', '13', '8']
       },
       {
         "id": "5fa6a7f9fe8b66c0e50eba0a",
         "organazierId": "5fa69d8015b5411ebe57daa1",
         "registered": "Tuesday, August 25, 2020 2:57 AM",
-        "title": "deserunt ullamco"
+        "title": "Let\'s have a Lord of the Rings viewing marathon",
+        "body": "on December 28 I invite everyone to see all the parts of Lord of the Rings! It will be fun!",
+        "type": "film",
+        "participants": [ '13', '8','12','4']
       },
       {
         "id": "5fa6a7f9a201edbc2a7a6a7a",
         "organazierId": "5fa69d8004951a9f9ba1b5b5",
         "registered": "Sunday, May 19, 2019 1:46 PM",
-        "title": "cupidatat eu"
+        "title": "Let\'s have a Home Alone viewing marathon",
+        "body": "Guys, the New Year is coming and I want some magic, on December 28 I invite everyone to see all the parts of Home Alone! It will be fun!",
+        "type": "film",
+        "participants": ['5', '13', '8','22','17','11']
       },
       {
         "id": "5fa6a7f9decca4601f9f4d70",
@@ -5332,7 +5397,9 @@ export const data = {
         "id": "5fa6a7f9aa6048914e3f6992",
         "organazierId": "5fa69d8015b5411ebe57daa1",
         "registered": "Monday, October 6, 2014 9:22 PM",
-        "title": "labore sint"
+        "title": "Help tighten up the Spanish language",
+        "body": "",
+        "type": "ptp",
       },
       {
         "id": "5fa6a7f9f70f8f7a4c36d076",
@@ -6045,5 +6112,39 @@ export const data = {
       }
     ],
   },
-
+  "messages": {
+    1: [
+      {
+        uidSender: "5fa69d80ffdd8589ae52c498",
+        message: "Hi everyone",
+      },
+      {
+        uidSender: "5fa69d80c8ea8712e242ce6b",
+        message: "Hi, Tania",
+      },
+      {
+        uidSender: "5fa69d80c8ea8712e242ce6b",
+        message: "How are you?",
+      },
+      {
+        uidSender: "5fa69d80ffdd8589ae52c498",
+        message: "I'm fine, thank you",
+      },
+      {
+        uidSender: "5fa69d80ffdd8589ae52c498",
+        message: "I want to start a physics club. How do you like this idea?",
+      },
+      {
+        uidSender: "5fa69d8015b5411ebe57daa1",
+        message: "Hi, Tania. It's great idea!",
+      },
+    ]
+  },
+  "dialogs": {
+    General: {
+      chatID: 1,
+      lastMessage: false,
+      avatar: null,
+    }
+  }
 }
