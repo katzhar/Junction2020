@@ -6,14 +6,23 @@ export default function Activity() {
   const { TabPane } = Tabs;
   return (
     <Tabs defaultActiveKey="1">
-      <TabPane tab="Tab 1" key="1">
-        Tab 1
+      <TabPane tab="Training" key="1">
+        <Tabs defaultActiveKey="1">
+          <TabPane tab="Webinar" key="1">
+          </TabPane>
+          <TabPane tab="Peer-to-Peer" key="2">
+            Tab 2
+          </TabPane>
+        </Tabs>
       </TabPane>
-      <TabPane tab="Tab 2" disabled key="2">
-        Tab 2
-      </TabPane>
-      <TabPane tab="Tab 3" key="3">
-        Tab 3
+      <TabPane tab="Еntertainment" key="2">
+        <Tabs defaultActiveKey="1">
+          <TabPane tab="Events" key="1">
+          </TabPane>
+          <TabPane tab="Private lessons" key="2">
+            Tab 2
+          </TabPane>
+        </Tabs>
       </TabPane>
     </Tabs>
   );
