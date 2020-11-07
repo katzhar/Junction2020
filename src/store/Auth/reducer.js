@@ -10,6 +10,7 @@ const initialState = {
   status: false,
   error: false,
   isLoading: false,
+  data: [],
 };
 
 const authReducer = (state = initialState, action) => {

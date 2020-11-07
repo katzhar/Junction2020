@@ -28,6 +28,8 @@ function App() {
   const user = useSelector((store) => store.user);
   const auth = useSelector((store) => store.auth);
 
+  console.log(localStorage.getItem('data'));
+
   let token = sessionStorage.getItem('x-auth-token');
 
   const initUserAction = React.useCallback(() => {

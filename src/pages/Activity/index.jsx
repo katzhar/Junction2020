@@ -8,6 +8,7 @@ export default function Activity() {
 
   const data = {
     title: 'Let\'s have a Harry Potter viewing marathon',
+    type: 'book',
       body: 'Guys, the New Year is coming and ' +
         'I want some magic, on December 28 I invite everyone to see all ' +
         'the parts of Harry Potter! It will be fun!',
@@ -32,7 +33,7 @@ export default function Activity() {
             </div>
           </TabPane>
           <TabPane tab="Peer-to-Peer" key="2">
-          <div>
+          <div className={styles.blocks}>
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
@@ -44,7 +45,7 @@ export default function Activity() {
           </div>
           </TabPane>
           <TabPane tab="Events" key="3">
-          <div>
+          <div className={styles.blocks}>
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
@@ -58,7 +59,7 @@ export default function Activity() {
           </div>
           </TabPane>
           <TabPane tab="Private lessons" key="4">
-          <div>
+          <div className={styles.blocks}>
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
