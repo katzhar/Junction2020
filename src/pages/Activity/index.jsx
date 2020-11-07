@@ -6,12 +6,15 @@ import styles from './activity.module.scss';
 
 export default function Activity() {
 
+  let localData = JSON.parse(localStorage.getItem('data'));
+console.log(localData);
+ let newData = [];
+
+
   const data = {
     title: 'Let\'s have a Harry Potter viewing marathon',
-    type: 'book',
-      body: 'Guys, the New Year is coming and ' +
-        'I want some magic, on December 28 I invite everyone to see all ' +
-        'the parts of Harry Potter! It will be fun!',
+    type: 'film',
+      body: 'Guys, the New Year is coming and I want some magic, on December 28 I invite everyone to see all the parts of Harry Potter! It will be fun!',
       creator: {
       fname: 'Kate',
         lname: 'Kate',
