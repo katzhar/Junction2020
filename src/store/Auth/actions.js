@@ -12,10 +12,13 @@ export const fetchAuthAction = (text, success = false) => {
   };
 };
 
-export const fetchAuthSuccess = (text = false) => {
+export const fetchAuthSuccess = ({text = false, data }) => {
   return {
     type: FETCH_AUTH_SUCCESS,
-    payload: { status: text },
+    payload: {
+      status: text,
+      data: data,
+    },
   };
 };
 
@@ -39,8 +42,9 @@ export const fetchAuth = (mail, password, loadingText) => async (dispatch) => {
   if (mail === data['users'][0].email && password === 'Qwerty1!') {
     sessionStorage.setItem('ws-auth-token', 'sesh1234567890');
     sessionStorage.setItem('x-auth-token', 'sesh1234567890');
+    localStorage.setItem('data', JSON.stringify(data));
     setTimeout(() => {
-      dispatch(fetchAuthSuccess());
+      dispatch(fetchAuthSuccess(data));
     }, 2000);
   } else {
     dispatch(fetchAuthFailed("User don't confirm mail", 401));

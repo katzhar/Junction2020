@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileInfo from './ProfileInfo';
 import ProfileSkills from './ProfileSkills';
-import classes from './Main.module.scss';
+import classes from './main.module.scss';
 
 export default function Main() {
   return (
