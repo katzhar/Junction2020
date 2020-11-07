@@ -1,8 +1,18 @@
 import React from "react";
 import styles from './ProfileSkills.module.scss';
 import { Chart } from 'react-chartjs-2';
+import {data} from "../../../data";
+import {useParams} from "react-router-dom";
 
 const ProfileSkills = () => {
+    const location = useParams();
+    let index;
+    data.users.forEach((user, i) => {
+        if (user.id === location.id) {
+            index = i;
+        }
+    });
+    const user = data.users[index];
     const chart1 = <canvas id="marksChart1" width="600px"></canvas>;
     const chart2 = <canvas id="marksChart2" width="600px"></canvas>;
     React.useEffect(() => {
@@ -13,7 +23,16 @@ const ProfileSkills = () => {
             datasets: [{
                 label: "Education skills",
                 backgroundColor: "rgba(200,0,0,0.2)",
-                data: [3, 2, 3, 3, 3, 1, 2, 2]
+                data: [
+                    user.rate.academicPerformance.math,
+                    user.rate.academicPerformance.english,
+                    user.rate.academicPerformance.phisics,
+                    user.rate.academicPerformance.philosophy,
+                    user.rate.academicPerformance.history,
+                    user.rate.academicPerformance.programming,
+                    user.rate.academicPerformance.economy,
+                    user.rate.academicPerformance.geographi,
+                ]
             }]
         };
         const radarChart = new Chart(ctx, {
@@ -37,7 +56,14 @@ const ProfileSkills = () => {
             datasets: [{
                 label: "Other skills",
                 backgroundColor: "rgba(0,80,200, 0.2)",
-                data: [3, 5, 6, 3]
+
+                data: [
+                    user.rate.extraPerfomance.art,
+                    user.rate.extraPerfomance.science,
+                    user.rate.extraPerfomance.sport,
+                    user.rate.extraPerfomance.other,
+
+                ]
             }]
         };
         const radarChart = new Chart(ctx, {
@@ -52,6 +78,7 @@ const ProfileSkills = () => {
             },
         });
     }, [chart2]);
+
 
     return (
         <div className={styles.skillsContainer}>

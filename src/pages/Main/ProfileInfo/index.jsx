@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './ProfileInfo.module.scss';
-import ProfilePhoto from '../../../img/ubartemi-ava.jpg';
-import { data } from '../../../data'
+
+import { data } from '../../../data';
 import { useParams } from 'react-router-dom';
 
 const ProfileInfo = () => {
@@ -13,6 +13,8 @@ const ProfileInfo = () => {
         }
     });
     const user = data.users[index];
+    const consultation = data.scienceEvents.Consultations[index];
+
     return (
         <div className={styles.profileInfo}>
             <div className={styles.photo}>
@@ -27,7 +29,7 @@ const ProfileInfo = () => {
             </div>
             <div className={styles.nextEvent}>
                 <h3>The next event</h3>
-                <p>Learning English</p>
+                <p>{consultation.title}</p>
             </div>
         </div>
     );
