@@ -1,0 +1,27 @@
+.profileInfo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.photo {
+  width: 250px;
+  height: 250px;
+}
+
+.photo img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+.info {
+
+}
+
+.nextEvent {
+  p {
+    cursor: pointer;
+  }
+}
