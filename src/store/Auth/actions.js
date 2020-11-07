@@ -1,4 +1,5 @@
 import { notification } from 'antd';
+import { data } from './data';
 export const FETCH_AUTH = 'FETCH_AUTH';
 export const FETCH_AUTH_SUCCESS = 'FETCH_AUTH_SUCCESS';
 export const FETCH_AUTH_FAILED = 'FETCH_AUTH_FAILED';
@@ -35,7 +36,7 @@ export const fetchAuth = (mail, password, loadingText) => async (dispatch) => {
   dispatch(fetchAuthClear());
   dispatch(fetchAuthAction(loadingText));
 
-  if (mail === 'test@mail.ru' && password === 'Qwerty1!') {
+  if (mail === data.mail && password === data.pass) {
     sessionStorage.setItem('ws-auth-token', 'sesh1234567890');
     sessionStorage.setItem('x-auth-token', 'sesh1234567890');
     setTimeout(() => {
