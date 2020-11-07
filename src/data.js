@@ -1,16 +1,14 @@
 export const data = {
   "users": [
     {
+      "key": 1,
       "id": "5fa69d80ffdd8589ae52c498",
       "isActive": false,
       "balance": 2600,
       "picture": "http://s.ekabu.ru/localStorage/post/55/b3/dd/91/55b3dd91_resizedScaled_740to740.jpg",
       "age": 21,
       "role": "student",
-      "name": {
-        "first": "Tania",
-        "last": "Buchanan"
-      },
+      "name": "Tania Buchanan",
       "rating": 564,
       "email": "tania.buchanan@undefined.biz",
       "phone": "+1 (936) 505-3093",
@@ -24,12 +22,12 @@ export const data = {
         "academicPerformance": {
           "math": 3,
           "english": 2,
-          "phisics": 3,
+          "physics": 3,
           "philosophy": 3,
           "history": 3,
           "programming": 1,
-          "economy": 2,
-          "geographi": 2
+          "economics": 2,
+          "geography": 2
         },
         "extraPerfomance": {
           "art": 66,
@@ -39,24 +37,19 @@ export const data = {
         }
       },
       "tags": [
-        "cillum",
-        "eiusmod",
-        "proident",
-        "ad",
-        "deserunt"
+        "english",
+        "sport"
       ]
     },
     {
+      "key": 2,
       "id": "5fa69d80c8ea8712e242ce6b",
       "isActive": true,
       "balance": 1463,
       "picture": "https://mtdata.ru/u27/photo30EF/20359649291-0/original.jpg",
       "age": 22,
       "role": "student",
-      "name": {
-        "first": "Linda",
-        "last": "Poole"
-      },
+      "name": "Linda Poole",
       "rating": 555,
       "email": "linda.poole@undefined.io",
       "phone": "+1 (818) 409-2952",
@@ -70,12 +63,12 @@ export const data = {
         "academicPerformance": {
           "math": 5,
           "english": 3,
-          "phisics": 5,
+          "physics": 5,
           "philosophy": 3,
           "history": 3,
           "programming": 5,
-          "economy": 3,
-          "geographi": 3
+          "economics": 3,
+          "geography": 3
         },
         "extraPerfomance": {
           "art": 62,
@@ -85,24 +78,20 @@ export const data = {
         }
       },
       "tags": [
-        "est",
-        "sit",
-        "sunt",
-        "aliquip",
-        "deserunt"
+        "economics",
+        "art",
+        "science"
       ]
     },
     {
+      "key": 3,
       "id": "5fa69d8015b5411ebe57daa1",
       "isActive": true,
       "balance": 2550,
       "picture": "https://img4.goodfon.ru/original/1024x1024/a/7b/devushka-shatenka-pricheska-makiiazh-litso-krupnym-planom-vz.jpg",
       "age": 25,
       "role": "student",
-      "name": {
-        "first": "Matilda",
-        "last": "Clements"
-      },
+      "name": "Matilda Clements",
       "rating": 543,
       "email": "matilda.clements@undefined.com",
       "phone": "+1 (837) 514-3406",
@@ -116,12 +105,12 @@ export const data = {
         "academicPerformance": {
           "math": 3,
           "english": 2,
-          "phisics": 2,
+          "physics": 2,
           "philosophy": 3,
           "history": 1,
           "programming": 3,
-          "economy": 2,
-          "geographi": 1
+          "economics": 2,
+          "geography": 1
         },
         "extraPerfomance": {
           "art": 87,
@@ -131,24 +120,20 @@ export const data = {
         }
       },
       "tags": [
-        "officia",
-        "esse",
-        "excepteur",
-        "culpa",
-        "dolor"
+        "art",
+        "history",
+        "programming"
       ]
     },
     {
+      "key": 4,
       "id": "5fa69d8004951a9f9ba1b5b5",
       "isActive": false,
       "balance": 2995,
       "picture": "https://data.whicdn.com/images/313218875/original.jpg",
       "age": 17,
       "role": "student",
-      "name": {
-        "first": "Malinda",
-        "last": "Conley"
-      },
+      "name": "Malinda Conley",
       "rating": 535,
       "email": "malinda.conley@undefined.ca",
       "phone": "+1 (854) 586-3292",
@@ -162,12 +147,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 1,
-          "phisics": 3,
+          "physics": 3,
           "philosophy": 5,
           "history": 2,
           "programming": 5,
-          "economy": 5,
-          "geographi": 1
+          "economics": 5,
+          "geography": 1
         },
         "extraPerfomance": {
           "art": 37,
@@ -177,24 +162,19 @@ export const data = {
         }
       },
       "tags": [
-        "amet",
-        "in",
-        "minim",
-        "fugiat",
-        "mollit"
+        "english",
+        "other"
       ]
     },
     {
+      "key": 5,
       "id": "5fa69d80930687df65565dc1",
       "isActive": false,
       "balance": 3596,
       "picture": "https://cdn.fifi.ru/person/origin/billy-vandendooren.jpg",
       "age": 22,
       "role": "student",
-      "name": {
-        "first": "Scott",
-        "last": "Chase"
-      },
+      "name": "Scott Chase",
       "rating": 521,
       "email": "scott.chase@undefined.net",
       "phone": "+1 (982) 534-2361",
@@ -208,12 +188,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 4,
-          "phisics": 1,
+          "physics": 1,
           "philosophy": 4,
           "history": 2,
           "programming": 5,
-          "economy": 3,
-          "geographi": 5
+          "economics": 3,
+          "geography": 5
         },
         "extraPerfomance": {
           "art": 86,
@@ -223,24 +203,19 @@ export const data = {
         }
       },
       "tags": [
-        "ut",
-        "ad",
-        "id",
-        "irure",
-        "ullamco"
+        "history",
+        "philosophy"
       ]
     },
     {
+      "key": 6,
       "id": "5fa69d801fcc99fb98f5038e",
       "isActive": false,
       "balance": 2111,
       "picture": "https://i.pinimg.com/736x/55/85/27/55852736a1135ce4bbe53b4402e2d899--model-polaroids-hot-male-models.jpg",
       "age": 22,
       "role": "student",
-      "name": {
-        "first": "Saunders",
-        "last": "Acosta"
-      },
+      "name": "Saunders Acosta",
       "rating": 499,
       "email": "saunders.acosta@undefined.info",
       "phone": "+1 (947) 414-2529",
@@ -254,12 +229,12 @@ export const data = {
         "academicPerformance": {
           "math": 4,
           "english": 2,
-          "phisics": 4,
+          "physics": 4,
           "philosophy": 3,
           "history": 2,
           "programming": 4,
-          "economy": 5,
-          "geographi": 4
+          "economics": 5,
+          "geography": 4
         },
         "extraPerfomance": {
           "art": 80,
@@ -269,24 +244,18 @@ export const data = {
         }
       },
       "tags": [
-        "dolor",
-        "velit",
-        "ut",
-        "aute",
-        "anim"
+        "art"
       ]
     },
     {
+      "key": 7,
       "id": "5fa69d8048fb013fdf291f73",
       "isActive": false,
       "balance": 3086,
       "picture": "https://valuyki.present4man.ru/upload/iblock/d9b/d9bf7fcb15623fc82ff56f05f83f25e9.jpg",
       "age": 21,
       "role": "student",
-      "name": {
-        "first": "Alvarado",
-        "last": "Lawrence"
-      },
+      "name": "Alvarado Lawrence",
       "rating": 491,
       "email": "alvarado.lawrence@undefined.name",
       "phone": "+1 (855) 574-3760",
@@ -300,12 +269,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 5,
-          "phisics": 4,
+          "physics": 4,
           "philosophy": 5,
           "history": 3,
           "programming": 5,
-          "economy": 2,
-          "geographi": 3
+          "economics": 2,
+          "geography": 3
         },
         "extraPerfomance": {
           "art": 66,
@@ -315,24 +284,19 @@ export const data = {
         }
       },
       "tags": [
-        "aliqua",
-        "velit",
-        "dolore",
-        "qui",
-        "irure"
+        "sport",
+        "art"
       ]
     },
     {
+      "key": 8,
       "id": "5fa69d809a0814ceefe25846",
       "isActive": false,
       "balance": 2848,
       "picture": "https://cache3.youla.io/files/images/780_780/5b/e6/5be6c798eef141ba181b8de4.jpg",
       "age": 20,
       "role": "student",
-      "name": {
-        "first": "Clare",
-        "last": "Miller"
-      },
+      "name": "Clare Miller",
       "rating": 489,
       "email": "clare.miller@undefined.tv",
       "phone": "+1 (835) 535-3638",
@@ -346,12 +310,12 @@ export const data = {
         "academicPerformance": {
           "math": 2,
           "english": 1,
-          "phisics": 2,
+          "physics": 2,
           "philosophy": 5,
           "history": 1,
           "programming": 1,
-          "economy": 1,
-          "geographi": 5
+          "economics": 1,
+          "geography": 5
         },
         "extraPerfomance": {
           "art": 79,
@@ -361,24 +325,19 @@ export const data = {
         }
       },
       "tags": [
-        "ea",
-        "eu",
-        "aute",
-        "ut",
-        "ad"
+        "programming",
+        "sport"
       ]
     },
     {
+      "key": 9,
       "id": "5fa69d80f42ba21a1c9f090d",
       "isActive": false,
       "balance": 1043,
       "picture": "https://i.siteapi.org/cl6x9Udw8y32gNv2BlBVmFSOvio=/fit-in/1024x768/center/top/8cf635ec147d749.s.siteapi.org/img/dzo70tga8hcs808sck0ko0w4ocwgs0",
       "age": 17,
       "role": "student",
-      "name": {
-        "first": "Case",
-        "last": "Williamson"
-      },
+      "name": "Case Williamson",
       "rating": 474,
       "email": "case.williamson@undefined.me",
       "phone": "+1 (985) 564-2092",
@@ -392,12 +351,12 @@ export const data = {
         "academicPerformance": {
           "math": 3,
           "english": 5,
-          "phisics": 2,
+          "physics": 2,
           "philosophy": 2,
           "history": 1,
           "programming": 1,
-          "economy": 2,
-          "geographi": 3
+          "economics": 2,
+          "geography": 3
         },
         "extraPerfomance": {
           "art": 20,
@@ -407,24 +366,18 @@ export const data = {
         }
       },
       "tags": [
-        "commodo",
-        "dolore",
-        "velit",
-        "laboris",
-        "ipsum"
+        "sport"
       ]
     },
     {
+      "key": 10,
       "id": "5fa69d8067321d2b46a94f5f",
       "isActive": true,
       "balance": 3937,
       "picture": "https://gazette.education.govt.nz/assets/VOLUME-96-ISSUE-9/web-youth-hub.jpg",
       "age": 23,
       "role": "student",
-      "name": {
-        "first": "Valdez",
-        "last": "Hatfield"
-      },
+      "name": "Valdez Hatfield",
       "rating": 465,
       "email": "valdez.hatfield@undefined.biz",
       "phone": "+1 (938) 576-3592",
@@ -438,12 +391,12 @@ export const data = {
         "academicPerformance": {
           "math": 3,
           "english": 4,
-          "phisics": 3,
+          "physics": 3,
           "philosophy": 3,
           "history": 1,
           "programming": 3,
-          "economy": 5,
-          "geographi": 1
+          "economics": 5,
+          "geography": 1
         },
         "extraPerfomance": {
           "art": 32,
@@ -453,24 +406,19 @@ export const data = {
         }
       },
       "tags": [
-        "id",
-        "ipsum",
-        "non",
-        "aliqua",
-        "culpa"
+        "math",
+        "english"
       ]
     },
     {
+      "key": 11,
       "id": "5fa69d80308ecddcdf0bc7ad",
       "isActive": true,
       "balance": 3299,
       "picture": "http://placehold.it/32x32",
       "age": 23,
       "role": "student",
-      "name": {
-        "first": "Moran",
-        "last": "Daugherty"
-      },
+      "name": "Moran Daugherty",
       "rating": 459,
       "email": "moran.daugherty@undefined.us",
       "phone": "+1 (906) 587-3467",
@@ -484,12 +432,12 @@ export const data = {
         "academicPerformance": {
           "math": 3,
           "english": 3,
-          "phisics": 3,
+          "physics": 3,
           "philosophy": 1,
           "history": 4,
           "programming": 5,
-          "economy": 5,
-          "geographi": 3
+          "economics": 5,
+          "geography": 3
         },
         "extraPerfomance": {
           "art": 100,
@@ -499,24 +447,18 @@ export const data = {
         }
       },
       "tags": [
-        "nisi",
-        "incididunt",
-        "excepteur",
-        "anim",
-        "aliquip"
+        "other"
       ]
     },
     {
+      "key": 12,
       "id": "5fa69d806134604abc8b8f5d",
       "isActive": false,
       "balance": 2519,
       "picture": "http://placehold.it/32x32",
       "age": 21,
       "role": "student",
-      "name": {
-        "first": "Faulkner",
-        "last": "Hurley"
-      },
+      "name": "Faulkner Hurley",
       "rating": 449,
       "email": "faulkner.hurley@undefined.org",
       "phone": "+1 (911) 562-2279",
@@ -530,12 +472,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 3,
-          "phisics": 3,
+          "physics": 3,
           "philosophy": 2,
           "history": 4,
           "programming": 4,
-          "economy": 3,
-          "geographi": 5
+          "economics": 3,
+          "geography": 5
         },
         "extraPerfomance": {
           "art": 34,
@@ -545,24 +487,20 @@ export const data = {
         }
       },
       "tags": [
-        "ullamco",
-        "reprehenderit",
-        "qui",
-        "eiusmod",
-        "laboris"
+        "philosophy",
+        "science",
+        "art"
       ]
     },
     {
+      "key": 13,
       "id": "5fa69d802269f42c2f58cbc5",
       "isActive": false,
       "balance": 2669,
       "picture": "http://placehold.it/32x32",
       "age": 17,
       "role": "student",
-      "name": {
-        "first": "Irene",
-        "last": "Martinez"
-      },
+      "name": "Irene Martinez",
       "rating": 434,
       "email": "irene.martinez@undefined.biz",
       "phone": "+1 (930) 594-3145",
@@ -576,12 +514,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 3,
-          "phisics": 4,
+          "physics": 4,
           "philosophy": 5,
           "history": 3,
           "programming": 2,
-          "economy": 1,
-          "geographi": 1
+          "economics": 1,
+          "geography": 1
         },
         "extraPerfomance": {
           "art": 56,
@@ -591,24 +529,19 @@ export const data = {
         }
       },
       "tags": [
-        "nulla",
-        "aliquip",
-        "eu",
-        "deserunt",
-        "irure"
+        "economics",
+        "art"
       ]
     },
     {
+      "key": 14,
       "id": "5fa69d8090038b36d7d09e58",
       "isActive": false,
       "balance": 3583,
       "picture": "http://placehold.it/32x32",
       "age": 23,
       "role": "student",
-      "name": {
-        "first": "Nita",
-        "last": "Fitzpatrick"
-      },
+      "name":  "Nita Fitzpatrick",
       "rating": 421,
       "email": "nita.fitzpatrick@undefined.io",
       "phone": "+1 (957) 576-2814",
@@ -622,12 +555,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 4,
-          "phisics": 5,
+          "physics": 5,
           "philosophy": 1,
           "history": 1,
           "programming": 3,
-          "economy": 2,
-          "geographi": 5
+          "economics": 2,
+          "geography": 5
         },
         "extraPerfomance": {
           "art": 56,
@@ -637,24 +570,19 @@ export const data = {
         }
       },
       "tags": [
-        "mollit",
-        "irure",
-        "excepteur",
-        "sunt",
-        "laborum"
+        "geography",
+        "other"
       ]
     },
     {
+      "key": 15,
       "id": "5fa69d8001bc75ab2de672ca",
       "isActive": true,
       "balance": 2605,
       "picture": "http://placehold.it/32x32",
       "age": 16,
       "role": "student",
-      "name": {
-        "first": "Alta",
-        "last": "Gallagher"
-      },
+      "name": "Alta Gallagher",
       "rating": 413,
       "email": "alta.gallagher@undefined.com",
       "phone": "+1 (866) 463-2598",
@@ -668,12 +596,12 @@ export const data = {
         "academicPerformance": {
           "math": 5,
           "english": 1,
-          "phisics": 5,
+          "physics": 5,
           "philosophy": 4,
           "history": 5,
           "programming": 4,
-          "economy": 5,
-          "geographi": 1
+          "economics": 5,
+          "geography": 1
         },
         "extraPerfomance": {
           "art": 76,
@@ -683,24 +611,18 @@ export const data = {
         }
       },
       "tags": [
-        "Lorem",
-        "quis",
-        "aliquip",
-        "consectetur",
-        "sunt"
+        "other"
       ]
     },
     {
+      "key": 16,
       "id": "5fa69d80810ae6d3771477b1",
       "isActive": false,
       "balance": 2624,
       "picture": "http://placehold.it/32x32",
       "age": 23,
       "role": "student",
-      "name": {
-        "first": "Roseann",
-        "last": "Melton"
-      },
+      "name": "Roseann Melton",
       "rating": 343,
       "email": "roseann.melton@undefined.ca",
       "phone": "+1 (992) 465-3643",
@@ -714,12 +636,12 @@ export const data = {
         "academicPerformance": {
           "math": 4,
           "english": 4,
-          "phisics": 5,
+          "physics": 5,
           "philosophy": 1,
           "history": 3,
           "programming": 1,
-          "economy": 4,
-          "geographi": 3
+          "economics": 4,
+          "geography": 3
         },
         "extraPerfomance": {
           "art": 77,
@@ -729,24 +651,19 @@ export const data = {
         }
       },
       "tags": [
-        "velit",
-        "nisi",
-        "elit",
-        "pariatur",
-        "consequat"
+        "science",
+        "sport"
       ]
     },
     {
+      "key": 17,
       "id": "5fa69d80caea60af64e8bb7c",
       "isActive": true,
       "balance": 3575,
       "picture": "http://placehold.it/32x32",
       "age": 19,
       "role": "student",
-      "name": {
-        "first": "Estella",
-        "last": "Meadows"
-      },
+      "name": "Estella Meadows",
       "rating": 320,
       "email": "estella.meadows@undefined.net",
       "phone": "+1 (858) 408-3087",
@@ -760,12 +677,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 5,
-          "phisics": 4,
+          "physics": 4,
           "philosophy": 3,
           "history": 1,
           "programming": 2,
-          "economy": 2,
-          "geographi": 4
+          "economics": 2,
+          "geography": 4
         },
         "extraPerfomance": {
           "art": 81,
@@ -775,24 +692,19 @@ export const data = {
         }
       },
       "tags": [
-        "culpa",
-        "aliquip",
-        "culpa",
-        "elit",
-        "incididunt"
+        "programming",
+        "sport"
       ]
     },
     {
+      "key": 18,
       "id": "5fa69d802c47aad203098b7a",
       "isActive": false,
       "balance": 1086,
       "picture": "http://placehold.it/32x32",
       "age": 21,
       "role": "student",
-      "name": {
-        "first": "Hodge",
-        "last": "Mooney"
-      },
+      "name": "Hodge Mooney",
       "rating": 317,
       "email": "hodge.mooney@undefined.info",
       "phone": "+1 (921) 433-2455",
@@ -806,12 +718,12 @@ export const data = {
         "academicPerformance": {
           "math": 2,
           "english": 4,
-          "phisics": 3,
+          "physics": 3,
           "philosophy": 5,
           "history": 4,
           "programming": 4,
-          "economy": 4,
-          "geographi": 4
+          "economics": 4,
+          "geography": 4
         },
         "extraPerfomance": {
           "art": 45,
@@ -821,24 +733,20 @@ export const data = {
         }
       },
       "tags": [
-        "commodo",
-        "enim",
-        "irure",
-        "duis",
-        "duis"
+        "english",
+        "history",
+        "programming"
       ]
     },
     {
+      "key": 19,
       "id": "5fa69d805e96fb93f9d6a4fa",
       "isActive": false,
       "balance": 3389,
       "picture": "http://placehold.it/32x32",
       "age": 21,
       "role": "student",
-      "name": {
-        "first": "Noble",
-        "last": "Fischer"
-      },
+      "name": "Noble Fischer",
       "rating": 310,
       "email": "noble.fischer@undefined.name",
       "phone": "+1 (885) 429-2039",
@@ -852,12 +760,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 2,
-          "phisics": 5,
+          "physics": 5,
           "philosophy": 3,
           "history": 5,
           "programming": 2,
-          "economy": 5,
-          "geographi": 5
+          "economics": 5,
+          "geography": 5
         },
         "extraPerfomance": {
           "art": 1,
@@ -867,24 +775,18 @@ export const data = {
         }
       },
       "tags": [
-        "ea",
-        "veniam",
-        "exercitation",
-        "sint",
-        "tempor"
+        "science"
       ]
     },
     {
+      "key": 20,
       "id": "5fa69d805badeda3e7c802e9",
       "isActive": false,
       "balance": 1880,
       "picture": "http://placehold.it/32x32",
       "age": 23,
       "role": "student",
-      "name": {
-        "first": "Sharron",
-        "last": "Hartman"
-      },
+      "name": "Sharron Hartman",
       "rating": 301,
       "email": "sharron.hartman@undefined.tv",
       "phone": "+1 (967) 410-3045",
@@ -898,12 +800,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 4,
-          "phisics": 5,
+          "physics": 5,
           "philosophy": 4,
           "history": 2,
           "programming": 4,
-          "economy": 4,
-          "geographi": 2
+          "economics": 4,
+          "geography": 2
         },
         "extraPerfomance": {
           "art": 6,
@@ -913,24 +815,19 @@ export const data = {
         }
       },
       "tags": [
-        "duis",
-        "consequat",
-        "culpa",
-        "aliquip",
-        "mollit"
+        "math",
+        "art"
       ]
     },
     {
+      "key": 21,
       "id": "5fa69d8058ce58a042ce4c9e",
       "isActive": false,
       "balance": 2493,
       "picture": "http://placehold.it/32x32",
       "age": 23,
       "role": "student",
-      "name": {
-        "first": "Franks",
-        "last": "Sanders"
-      },
+      "name": "Franks Sanders",
       "rating": 289,
       "email": "franks.sanders@undefined.me",
       "phone": "+1 (879) 428-2031",
@@ -944,12 +841,12 @@ export const data = {
         "academicPerformance": {
           "math": 5,
           "english": 5,
-          "phisics": 4,
+          "physics": 4,
           "philosophy": 1,
           "history": 4,
           "programming": 2,
-          "economy": 2,
-          "geographi": 2
+          "economics": 2,
+          "geography": 2
         },
         "extraPerfomance": {
           "art": 67,
@@ -959,24 +856,19 @@ export const data = {
         }
       },
       "tags": [
-        "laboris",
-        "cupidatat",
-        "non",
-        "laborum",
-        "sit"
+        "science",
+        "other"
       ]
     },
     {
+      "key": 22,
       "id": "5fa69d809a172709bb004dba",
       "isActive": true,
       "balance": 1804,
       "picture": "http://placehold.it/32x32",
       "age": 16,
       "role": "student",
-      "name": {
-        "first": "Willis",
-        "last": "Orr"
-      },
+      "name": "Willis Orr",
       "rating": 272,
       "email": "willis.orr@undefined.biz",
       "phone": "+1 (964) 453-3549",
@@ -990,12 +882,12 @@ export const data = {
         "academicPerformance": {
           "math": 3,
           "english": 2,
-          "phisics": 3,
+          "physics": 3,
           "philosophy": 5,
           "history": 2,
           "programming": 4,
-          "economy": 4,
-          "geographi": 4
+          "economics": 4,
+          "geography": 4
         },
         "extraPerfomance": {
           "art": 6,
@@ -1005,24 +897,19 @@ export const data = {
         }
       },
       "tags": [
-        "incididunt",
-        "dolore",
-        "incididunt",
-        "dolor",
-        "occaecat"
+        "english",
+        "science"
       ]
     },
     {
+      "key": 23,
       "id": "5fa69d80898392d55e40c102",
       "isActive": false,
       "balance": 3779,
       "picture": "http://placehold.it/32x32",
       "age": 21,
       "role": "student",
-      "name": {
-        "first": "Preston",
-        "last": "Pollard"
-      },
+      "name": "Preston Pollard",
       "rating": 265,
       "email": "preston.pollard@undefined.us",
       "phone": "+1 (952) 518-3451",
@@ -1036,12 +923,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 2,
-          "phisics": 4,
+          "physics": 4,
           "philosophy": 4,
           "history": 3,
           "programming": 1,
-          "economy": 2,
-          "geographi": 2
+          "economics": 2,
+          "geography": 2
         },
         "extraPerfomance": {
           "art": 41,
@@ -1051,24 +938,19 @@ export const data = {
         }
       },
       "tags": [
-        "nisi",
-        "nisi",
-        "duis",
-        "nostrud",
-        "laboris"
+        "programming",
+        "english"
       ]
     },
     {
+      "key": 24,
       "id": "5fa69d804dd986086fa4d0ab",
       "isActive": false,
       "balance": 3978,
       "picture": "http://placehold.it/32x32",
       "age": 16,
       "role": "student",
-      "name": {
-        "first": "Warner",
-        "last": "Roach"
-      },
+      "name": "Warner Roach",
       "rating": 244,
       "email": "warner.roach@undefined.org",
       "phone": "+1 (834) 407-2719",
@@ -1082,12 +964,12 @@ export const data = {
         "academicPerformance": {
           "math": 2,
           "english": 2,
-          "phisics": 3,
+          "physics": 3,
           "philosophy": 3,
           "history": 5,
           "programming": 4,
-          "economy": 4,
-          "geographi": 4
+          "economics": 4,
+          "geography": 4
         },
         "extraPerfomance": {
           "art": 77,
@@ -1097,24 +979,20 @@ export const data = {
         }
       },
       "tags": [
-        "eu",
-        "est",
-        "culpa",
-        "proident",
-        "dolore"
+        "programming",
+        "math",
+        "sport"
       ]
     },
     {
+      "key": 25,
       "id": "5fa69d80d5eab990c41e7b1a",
       "isActive": false,
       "balance": 2758,
       "picture": "http://placehold.it/32x32",
       "age": 23,
       "role": "student",
-      "name": {
-        "first": "Nikki",
-        "last": "Acevedo"
-      },
+      "name": "Nikki Acevedo",
       "rating": 232,
       "email": "nikki.acevedo@undefined.biz",
       "phone": "+1 (833) 412-2233",
@@ -1128,12 +1006,12 @@ export const data = {
         "academicPerformance": {
           "math": 3,
           "english": 4,
-          "phisics": 5,
+          "physics": 5,
           "philosophy": 5,
           "history": 2,
           "programming": 3,
-          "economy": 4,
-          "geographi": 5
+          "economics": 4,
+          "geography": 5
         },
         "extraPerfomance": {
           "art": 66,
@@ -1143,24 +1021,18 @@ export const data = {
         }
       },
       "tags": [
-        "sit",
-        "aliqua",
-        "laborum",
-        "Lorem",
-        "irure"
+        "history"
       ]
     },
     {
+      "key": 26,
       "id": "5fa69d80330f28d8821c44a8",
       "isActive": false,
       "balance": 3630,
       "picture": "http://placehold.it/32x32",
       "age": 22,
       "role": "student",
-      "name": {
-        "first": "Webster",
-        "last": "Lee"
-      },
+      "name": "Webster Lee",
       "rating": 221,
       "email": "webster.lee@undefined.io",
       "phone": "+1 (899) 585-3488",
@@ -1174,12 +1046,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 2,
-          "phisics": 1,
+          "physics": 1,
           "philosophy": 3,
           "history": 2,
           "programming": 3,
-          "economy": 5,
-          "geographi": 4
+          "economics": 5,
+          "geography": 4
         },
         "extraPerfomance": {
           "art": 41,
@@ -1189,24 +1061,20 @@ export const data = {
         }
       },
       "tags": [
-        "deserunt",
-        "quis",
-        "officia",
-        "occaecat",
-        "occaecat"
+        "history",
+        "english",
+        "art"
       ]
     },
     {
+      "key": 27, 
       "id": "5fa69d808cc90dc161330046",
       "isActive": false,
       "balance": 2416,
       "picture": "http://placehold.it/32x32",
       "age": 17,
       "role": "student",
-      "name": {
-        "first": "Jones",
-        "last": "James"
-      },
+      "name": "Jones James",
       "rating": 221,
       "email": "jones.james@undefined.com",
       "phone": "+1 (996) 498-3455",
@@ -1220,12 +1088,12 @@ export const data = {
         "academicPerformance": {
           "math": 3,
           "english": 5,
-          "phisics": 2,
+          "physics": 2,
           "philosophy": 3,
           "history": 2,
           "programming": 3,
-          "economy": 4,
-          "geographi": 5
+          "economics": 4,
+          "geography": 5
         },
         "extraPerfomance": {
           "art": 22,
@@ -1235,24 +1103,19 @@ export const data = {
         }
       },
       "tags": [
-        "nulla",
-        "reprehenderit",
-        "deserunt",
-        "fugiat",
-        "enim"
+        "history",
+        "math"
       ]
     },
     {
+      "key": 28,
       "id": "5fa69d8081f9421f4eb2efe7",
       "isActive": false,
       "balance": 2961,
       "picture": "http://placehold.it/32x32",
       "age": 17,
       "role": "student",
-      "name": {
-        "first": "Josie",
-        "last": "Gay"
-      },
+      "name": "Josie Gay",
       "rating": 220,
       "email": "josie.gay@undefined.ca",
       "phone": "+1 (806) 472-3088",
@@ -1266,12 +1129,12 @@ export const data = {
         "academicPerformance": {
           "math": 5,
           "english": 2,
-          "phisics": 5,
+          "physics": 5,
           "philosophy": 5,
           "history": 1,
           "programming": 4,
-          "economy": 5,
-          "geographi": 5
+          "economics": 5,
+          "geography": 5
         },
         "extraPerfomance": {
           "art": 76,
@@ -1281,24 +1144,18 @@ export const data = {
         }
       },
       "tags": [
-        "incididunt",
-        "nisi",
-        "ipsum",
-        "quis",
-        "non"
+        "other"
       ]
     },
     {
+      "key": 29,
       "id": "5fa69d80f5a8a910cebe7923",
       "isActive": false,
       "balance": 1832,
       "picture": "http://placehold.it/32x32",
       "age": 23,
       "role": "student",
-      "name": {
-        "first": "Maureen",
-        "last": "Ramsey"
-      },
+      "name": "Maureen Ramsey",
       "rating": 219,
       "email": "maureen.ramsey@undefined.net",
       "phone": "+1 (963) 471-2120",
@@ -1312,12 +1169,12 @@ export const data = {
         "academicPerformance": {
           "math": 1,
           "english": 5,
-          "phisics": 4,
+          "physics": 4,
           "philosophy": 2,
           "history": 5,
           "programming": 3,
-          "economy": 2,
-          "geographi": 5
+          "economics": 2,
+          "geography": 5
         },
         "extraPerfomance": {
           "art": 31,
@@ -1327,24 +1184,18 @@ export const data = {
         }
       },
       "tags": [
-        "tempor",
-        "anim",
-        "elit",
-        "elit",
-        "do"
+        "other"
       ]
     },
     {
+      "key": 30,
       "id": "5fa69d80f2d4c7e7bac6beff",
       "isActive": false,
       "balance": 3906,
       "picture": "http://placehold.it/32x32",
       "age": 18,
       "role": "student",
-      "name": {
-        "first": "Phelps",
-        "last": "Mcfarland"
-      },
+      "name": "Phelps Mcfarland",
       "rating": 119,
       "email": "phelps.mcfarland@undefined.info",
       "phone": "+1 (894) 537-3565",
@@ -1358,12 +1209,12 @@ export const data = {
         "academicPerformance": {
           "math": 4,
           "english": 3,
-          "phisics": 2,
+          "physics": 2,
           "philosophy": 4,
           "history": 3,
           "programming": 5,
-          "economy": 5,
-          "geographi": 3
+          "economics": 5,
+          "geography": 3
         },
         "extraPerfomance": {
           "art": 4,
@@ -1373,11 +1224,9 @@ export const data = {
         }
       },
       "tags": [
-        "eiusmod",
-        "consectetur",
-        "exercitation",
-        "enim",
-        "duis"
+        "science",
+        "sport",
+        "history"
       ]
     }
   ],
