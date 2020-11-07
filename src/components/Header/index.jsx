@@ -20,7 +20,7 @@ export default function Header() {
     <div className="header">
       <div className="header__container">
         <div className="header__logo">
-          <Link to="/">Strings</Link>
+          <Link to="/">Hack</Link>
         </div>
         <div className="header__right-block">
           <div className="header__actions">
