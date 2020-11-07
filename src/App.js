@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { data } from './data';
 import 'antd/dist/antd.css';
 
@@ -12,7 +12,8 @@ import {
 } from './components/index';
 
 import {
-  Main
+  Main,
+  Rating,
 } from './pages/index';
 
 function App() {
@@ -63,6 +64,9 @@ function App() {
               </Route>
               <Route exact path="/main">
                 <Main />
+              </Route>
+              <Route exact path="/rating">
+                <Rating />
               </Route>
             </Route>
           </Switch>
