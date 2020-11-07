@@ -4,7 +4,7 @@ export const data = {
       "id": "5fa69d80ffdd8589ae52c498",
       "isActive": false,
       "balance": 2600,
-      "picture": "http://placehold.it/32x32",
+      "picture": "http://s.ekabu.ru/localStorage/post/55/b3/dd/91/55b3dd91_resizedScaled_740to740.jpg",
       "age": 21,
       "role": "student",
       "name": {
