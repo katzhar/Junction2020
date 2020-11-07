@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font: 400 13.3333px 'Montserrat';
+}
+
+button,
+input,
+textarea {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.MuiFormLabel-root {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.form__block {
+  height: 100%;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-error {
+    color: #f62354;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  &-info {
+    color: #409eff;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  &-success {
+    color: #10bf6a;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  form {
+    padding-top: 10px;
+    max-width: 620px;
+
+    .button {
+      margin-top: 16px;
+    }
+  }
+
+  .description {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin: 10px 0 30px;
+  }
+
+  .actions {
+    margin-top: 10px;
+  }
+}
+
+.green-link {
+  position: relative;
+  font-size: 1rem;
+  color: #10bf6a !important;
+  font-weight: bold;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #10bf6a;
+    transition: 0.3s linear;
+  }
+
+  &:hover::after {
+    opacity: 0;
+  }
+}
+
+.red-link {
+  position: relative;
+  font-size: 1rem;
+  color: #f62354 !important;
+  font-weight: bold;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #f62354;
+    border-radius: 12px;
+    opacity: 1;
+    transition: 0.3s linear;
+  }
+
+  &:hover::after {
+    opacity: 0;
+  }
+}
+
+a {
+  color: #fff;
+}
