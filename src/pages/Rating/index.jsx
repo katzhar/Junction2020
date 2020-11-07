@@ -10,6 +10,17 @@ import styles from './rating.module.scss';
 import { data } from '../../data';
 
 export default function Rating() {
+  // const countRating = (academ, extra) => {
+  //   let sum = 0;
+  //   let sum2 = 0
+  //   Object.keys(academ).forEach((elem) => {
+  //       sum += academ[elem];
+  //   })
+  //   Object.keys(extra).forEach((elem) => {
+  //       sum2 += extra[elem];
+  //   })
+  //   return sum + sum2;
+  // }
   return (
     <TableContainer className={styles.table} component={Paper}>
       <Table aria-label="simple table">
@@ -21,7 +32,7 @@ export default function Rating() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map((row, i) => (
+          {data.users.map((row, i) => (
             <TableRow key={row.id}>
               <TableCell width={100} align="center">{++i}</TableCell>
               <TableCell align="center">{row.name.first} {row.name.last}</TableCell>
