@@ -14,9 +14,6 @@ export default function MenuComponent() {
       <Link id="home" to="/user/page">
         User Page
       </Link>
-      <Link id="matchs" to="/matchs">
-        Matchs
-      </Link>
       <Link id="chat" to="/dialogs">
         Dialogs
       </Link>
