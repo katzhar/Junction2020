@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { useDispatch } from "react-redux";
-import { Menu, Button } from '../index';
+import { Button } from '../index';
 import { fetchLogOut } from '../../store/actions';
 
 import './Header.scss';
@@ -32,16 +32,8 @@ export default function Header() {
                 onClick={handlerLogOut}
                 subClass="header-action"
               />
-            ) : (
-              <Button
-                href="/signIn"
-                text="Sign In"
-                type="button"
-                subClass="header-action"
-              />
-            )}
+            ) : null}
           </div>
-          <Menu></Menu>
         </div>
       </div>
     </div>
