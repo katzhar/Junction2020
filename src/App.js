@@ -3,6 +3,7 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { data } from './data';
 import 'antd/dist/antd.css';
+import styles from './app.module.scss';
 
 import {
   Login,
@@ -15,6 +16,8 @@ import {
   Main,
   Rating,
 } from './pages/index';
+import Activity from './pages/Activity';
+import LeftMenu from './components/LeftMenu';
 
 function App() {
   const history = useHistory();
@@ -59,6 +62,8 @@ function App() {
             </Route>
             <Route>
               <Header path="/:path" />
+              <div className={styles.container}>
+              <LeftMenu/>
               <Route exact path="/signIn">
                 <SignIn />
               </Route>
@@ -68,6 +73,10 @@ function App() {
               <Route exact path="/rating">
                 <Rating />
               </Route>
+              <Route exact path="/activity">
+                <Activity/>
+            </Route>
+              </div>
             </Route>
           </Switch>
       )}
