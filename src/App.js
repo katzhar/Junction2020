@@ -68,7 +68,7 @@ function App() {
                 <>
                   <div className={styles.container}>
                     <LeftMenu/>
-                    <Route exact path="/main/:id">
+                    <Route exact path="/main">
                       <Main />
                     </Route>
                     <Route exact path="/rating">

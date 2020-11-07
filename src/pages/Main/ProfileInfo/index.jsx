@@ -18,7 +18,6 @@ const ProfileInfo = () => {
     return (
         <div className={styles.profileInfo}>
             <div className={styles.photo}>
-                <img src={user.picture} alt="avatar"/>
             </div>
             <div className={styles.info}>
                 <h3>{user.name.first}</h3>

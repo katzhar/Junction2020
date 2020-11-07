@@ -5,7 +5,7 @@ import Text from 'antd/lib/typography/Text';
 
 const columns = [
   {
-    title: 'place',
+    title: 'Place',
     dataIndex: 'key',
     key: 'key',
     render: text => <a>{text}</a>
