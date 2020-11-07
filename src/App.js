@@ -10,7 +10,10 @@ import {
   Login,
   SignIn,
   Header,
-  Preloader
+  Preloader,
+  Dialogs,
+  Chat,
+  Widget
 } from './components/index';
 
 import {
@@ -71,6 +74,7 @@ function App() {
               <Route exact path="/main">
                 <Main />
               </Route>
+<<<<<<< Updated upstream
               <Route exact path="/rating">
                 <Rating />
               </Route>
@@ -78,6 +82,15 @@ function App() {
                 <Activity/>
             </Route>
               </div>
+=======
+              <Route exact path="/dialogs">
+                <Dialogs title="Диалоги" />
+              </Route>
+              <Route path="/chat/:id">
+                <Chat />
+              </Route>
+              {sessionStorage.getItem('x-auth-token') && <Widget />}
+>>>>>>> Stashed changes
             </Route>
           </Switch>
       )}
