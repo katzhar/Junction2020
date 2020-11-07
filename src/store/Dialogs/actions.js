@@ -22,8 +22,8 @@ export const fetchInitDialogs = () => async (dispatch) => {
   if (token) {
     const dialogs = JSON.parse(localStorage.getItem('dialogs'));
     if (!dialogs) {
-      localStorage.setItem('dialogs', JSON.stringify(Object.keys(data['dialogs'])));
-      dispatch(initDialogs(Object.keys(data['dialogs'])));
+      localStorage.setItem('dialogs', JSON.stringify(data['dialogs']));
+      dispatch(initDialogs(data['dialogs']));
     } else dispatch(initDialogs(dialogs));
   } else notification.error({
     message: 'User not authorized',

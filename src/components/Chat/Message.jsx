@@ -1,21 +1,18 @@
 import React from "react";
-import {useSelector} from "react-redux";
 import styled from 'styled-components';
 
-export const Message = ({ id, receiver, myMessage, children }) => {
-  const dialogs = useSelector((store) => store.dialogs);
-
+export const Message = ({ id, myMessage, children }) => {
   return (
     <MessageItem myMessage={myMessage}>
-      {!myMessage && dialogs.map((item) => item.uid === receiver ? (
+      {/* {!myMessage && (
         <MessageImage key={id}>
           <picture>
             <source srcSet={item.avatar}/>
             <img className="user__picture" src={item.avatar} alt="user" />
           </picture>
         </MessageImage>
-      ) : null)}
-      <MessageContent>
+      )} */}
+      <MessageContent myMessage={myMessage}>
         {children}
       </MessageContent>
     </MessageItem>
@@ -33,7 +30,7 @@ const MessageItem = styled.div`
 const MessageContent = styled.div`
   color: #fff;
   border-radius: 10px;
-  background-color: #f62354;
+  background-color: ${({ myMessage }) => myMessage ? "rgba(23, 146, 255, 0.9)" : "rgba(84, 84, 84, .8)"};
   padding: 8px 12px;
 `;
 

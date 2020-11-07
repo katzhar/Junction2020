@@ -6112,8 +6112,8 @@ export const data = {
       }
     ],
   },
-  "dialogs": {
-    General: [
+  "messages": {
+    1: [
       {
         uidSender: "5fa69d80ffdd8589ae52c498",
         message: "Hi everyone",
@@ -6139,5 +6139,12 @@ export const data = {
         message: "Hi, Tania. It's great idea!",
       },
     ]
+  },
+  "dialogs": {
+    General: {
+      chatID: 1,
+      lastMessage: false,
+      avatar: null,
+    }
   }
 }

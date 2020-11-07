@@ -1,12 +1,10 @@
 import React from "react";
-import {useDispatch, useSelector} from "react-redux";
-import { addMessage } from '../../store/actions';
+import {useDispatch} from "react-redux";
+import { fetchAddMessage } from '../../store/actions';
 import { Button } from '../index';
 import styles from "./Chat.module.scss";
 
-export const ChatForm = ({ receiver }) => {
-  const socket = useSelector((store) => store.socket);
-  const user = useSelector((store) => store.user);
+export const ChatForm = ({ chat }) => {
   const [value, setValue] = React.useState('');
   const dispatch = useDispatch();
 
@@ -14,19 +12,17 @@ export const ChatForm = ({ receiver }) => {
     if (value !== '') {
       let message = {};
       message.type = "message";
-      message.uidReceiver = receiver;
-      message.uidSender = user.uid;
+      message.uidReceiver = chat;
+      message.uidSender = "5fa69d80ffdd8589ae52c498";
       message.body = value;
-      let jsonMessage = JSON.stringify(message);
-      socket.send(jsonMessage);
-      dispatch(addMessage({
-        uidReceiver: message.uidReceiver,
-        uidSender: message.uidSender,
-        body: message.body,
+      dispatch(fetchAddMessage({
+        receiver: chat,
+        sender: "5fa69d80ffdd8589ae52c498",
+        message: message.body,
       }));
       setValue('');
     }
-  }, [dispatch, value, receiver, socket, user.uid])
+  }, [dispatch, value, chat])
 
   return (
     <form onSubmit={(e) => e.preventDefault()}>

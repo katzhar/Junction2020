@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from "./Dialogs.module.scss";
 
-export const DialogItem = ({ dialog }) => {
+export const DialogItem = ({ name, dialog }) => {
   return (
-    <Link to={`/chat/${dialog.uid}`} className={styles.DialogItem}>
+    <Link to={`/chat/${dialog.chatID}`} className={styles.DialogItem}>
       <div className={styles.DialogImage}>
         <picture>
           <source srcSet={dialog.avatar}/>
@@ -12,8 +12,8 @@ export const DialogItem = ({ dialog }) => {
         </picture>
       </div>
       <div className={styles.DialogContent}>
-        <div className={styles.CompanionName}>{`${dialog.fname} ${dialog.lname}`}</div>
-        <div className={styles.LastMessage}>{dialog.lastMessageBody || 'Начните диалог'}</div>
+        <div className={styles.CompanionName}>{name}</div>
+        <div className={styles.LastMessage}>{dialog.lastMessage || 'Начните диалог'}</div>
       </div>
     </Link>
   );

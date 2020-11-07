@@ -11,7 +11,7 @@
 }
 
 .DialogItem {
-  background-color: rgba(246,36,84, 0.1);
+  background-color: rgba(23, 146, 255, 0.1);
   padding: 10px;
   border-radius: 8px;
   display: flex;
@@ -28,7 +28,6 @@
     margin-top: 10px;
   }
 
-
   .DialogImage {
     display: flex;
     flex-direction: row;
@@ -38,7 +37,7 @@
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
-    border: 1px solid #f62354;
+    border: 1px solid #1891ff;
 
     img {
       width: 100%;
