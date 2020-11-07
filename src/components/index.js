@@ -9,3 +9,4 @@ export { default as Header } from './Header';
 export { default as Menu } from './MenuComponent';
 export { default as Preloader } from './Preloader';
 export { default as Modal } from './Modal';
+export { default as Main } from './Main';
