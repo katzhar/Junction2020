@@ -5240,9 +5240,8 @@ export const data = {
         "id": "5fa6a7f99bfae4509f9d9e98",
         "organazierId": "5fa69d8015b5411ebe57daa1",
         "registered": "Saturday, May 23, 2020 2:03 PM",
-        "title": "Book discussion The Idiot By Fyodor Dostoyevsky",
-        "body": "For a long time I was interested in Russian classics and " +
-          "decided to read the book The Idiot By Fyodor Dostoyevsky in 2 weeks. If you are also interested in the topic, I invite you to the discussion on November 21.",
+        "title": "How to be productive at home",
+        "body": " We will tell you how to properly organize your working time, as well as how to separate the time of study from rest. ",
         "type": "webinar",
         "participants": ['1', '12', '22','24','8','3','5']
       },

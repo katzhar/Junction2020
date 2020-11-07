@@ -1,74 +1,61 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './activity.module.scss';
 import { Tabs } from 'antd';
 import Block from '../../components/Block';
 import styles from './activity.module.scss';
+import { data } from '../../data';
 
 export default function Activity() {
+const [newData, setNewData] = useState({
+    webinar: [],
+    ptp: [],
+    events:[],
+    lessons: [],
+  });
+  const [localData, setLocalData] = useState(data);
 
-  let localData = JSON.parse(localStorage.getItem('data'));
-console.log(localData);
- let newData = [];
-
-
-  const data = {
-    title: 'Let\'s have a Harry Potter viewing marathon',
-    type: 'film',
-      body: 'Guys, the New Year is coming and I want some magic, on December 28 I invite everyone to see all the parts of Harry Potter! It will be fun!',
-      creator: {
-      fname: 'Kate',
-        lname: 'Kate',
-      },
-     participants: ['user1 ', 'user2 ', 'user3 '] ,
-  };
+  useEffect(()=>{
+      let users = localData.users;
+      let events = localData.scienceEvents.Consultations;
+      let tmpData = events.map((item) => {
+        let user = users.filter(i => i.id === item.organazierId)
+        return{...item, user}
+      })
+     let tmp =  {
+        webinar: [],
+          ptp: [],
+        events:[],
+        lessons: [],
+      }
+       tmp.webinar = tmpData.filter(i => i.type === 'webinar');
+      tmp.ptp = tmpData.filter(i => i.type === 'ptp');
+      tmp.events = tmpData.filter(i => (i.type === 'event' || i.type === 'book' || i.type ==='film'));
+      tmp.lessons = tmpData.filter(i => i.type === 'lessons');
+      setNewData(tmp);
+    },
+   [localData] )
 
   const { TabPane } = Tabs;
   return (
         <Tabs defaultActiveKey="1">
           <TabPane tab="Webinar" key="1">
             <div className={styles.blocks}>
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
+              {newData.webinar.map((item)=> <Block data={item} />)}
             </div>
           </TabPane>
           <TabPane tab="Peer-to-Peer" key="2">
           <div className={styles.blocks}>
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
+            {newData.ptp.map((item)=> <Block data={item} />)}
           </div>
           </TabPane>
           <TabPane tab="Events" key="3">
           <div className={styles.blocks}>
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
+            {newData.events.map((item)=> <Block data={item} />)}
           </div>
           </TabPane>
           <TabPane tab="Private lessons" key="4">
           <div className={styles.blocks}>
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
-            <Block data={data} />
+            {newData.lessons.map((item)=> <Block data={item} />)}
           </div>
           </TabPane>
     </Tabs>
