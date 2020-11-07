@@ -1,5 +1,4 @@
 import { notification } from 'antd';
-
 export const FETCH_AUTH = 'FETCH_AUTH';
 export const FETCH_AUTH_SUCCESS = 'FETCH_AUTH_SUCCESS';
 export const FETCH_AUTH_FAILED = 'FETCH_AUTH_FAILED';
@@ -35,36 +34,18 @@ export const fetchAuthClear = () => {
 export const fetchAuth = (mail, password, loadingText) => async (dispatch) => {
   dispatch(fetchAuthClear());
   dispatch(fetchAuthAction(loadingText));
-  let response = await fetch('http://localhost:3000/user/auth/', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      mail: mail,
-      pass: password,
-    }),
-  });
 
-  if (response.status === 401) {
+  if (mail === 'test@mail.ru' && password === 'Qwerty1!') {
+    sessionStorage.setItem('ws-auth-token', 'sesh1234567890');
+    sessionStorage.setItem('x-auth-token', 'sesh1234567890');
+    setTimeout(() => {
+      dispatch(fetchAuthSuccess());
+    }, 2000);
+  } else {
     dispatch(fetchAuthFailed("User don't confirm mail", 401));
     notification.error({
       message: "User don't confirm mail",
     });
-  } else if (response.status === 422) {
-    dispatch(fetchAuthFailed('Wrong mail or password', 422));
-    notification.error({
-      message: 'Wrong mail or password',
-    });
-  } else if (!response.ok) {
-    throw Error(response.statusText);
-  } else {
-    let data = await response.json();
-    sessionStorage.setItem('ws-auth-token', data['ws-auth-token']);
-    sessionStorage.setItem('x-auth-token', data['x-auth-token']);
-    setTimeout(() => {
-      dispatch(fetchAuthSuccess());
-    }, 2000);
   }
 };
 
@@ -72,5 +53,4 @@ export const fetchLogOut = () => async (dispatch) => {
   dispatch(fetchAuthClear());
   sessionStorage.removeItem('x-auth-token');
   sessionStorage.removeItem('ws-auth-token');
-  localStorage.removeItem('user');
 }
