@@ -1,5 +1,4 @@
-export const data = {
-  "users": [
+export const data = [
     {
       "id": "5fa69d80ffdd8589ae52c498",
       "isActive": false,
@@ -11,6 +10,7 @@ export const data = {
         "first": "Tania",
         "last": "Buchanan"
       },
+      "rating": 545,
       "email": "tania.buchanan@undefined.biz",
       "phone": "+1 (936) 505-3093",
       "address": "460 Anchorage Place, Brenton, District Of Columbia, 4388",
@@ -56,6 +56,7 @@ export const data = {
         "first": "Linda",
         "last": "Poole"
       },
+      "rating": 540,
       "email": "linda.poole@undefined.io",
       "phone": "+1 (818) 409-2952",
       "address": "503 Langham Street, Kersey, Michigan, 8767",
@@ -101,6 +102,7 @@ export const data = {
         "first": "Matilda",
         "last": "Clements"
       },
+      "rating": 521,
       "email": "matilda.clements@undefined.com",
       "phone": "+1 (837) 514-3406",
       "address": "828 Nolans Lane, Bascom, Tennessee, 5194",
@@ -146,6 +148,7 @@ export const data = {
         "first": "Malinda",
         "last": "Conley"
       },
+      "rating": 461,
       "email": "malinda.conley@undefined.ca",
       "phone": "+1 (854) 586-3292",
       "address": "430 Church Lane, Cloverdale, Indiana, 6945",
@@ -191,6 +194,7 @@ export const data = {
         "first": "Scott",
         "last": "Chase"
       },
+      "rating": 411,
       "email": "scott.chase@undefined.net",
       "phone": "+1 (982) 534-2361",
       "address": "912 Elliott Place, Carbonville, Utah, 4163",
@@ -236,6 +240,7 @@ export const data = {
         "first": "Saunders",
         "last": "Acosta"
       },
+      "rating": 401,
       "email": "saunders.acosta@undefined.info",
       "phone": "+1 (947) 414-2529",
       "address": "233 Wyckoff Avenue, Slovan, American Samoa, 4277",
@@ -281,6 +286,7 @@ export const data = {
         "first": "Alvarado",
         "last": "Lawrence"
       },
+      "rating": 399,
       "email": "alvarado.lawrence@undefined.name",
       "phone": "+1 (855) 574-3760",
       "address": "237 Radde Place, Thatcher, Kansas, 9909",
@@ -326,6 +332,7 @@ export const data = {
         "first": "Clare",
         "last": "Miller"
       },
+      "rating": 390,
       "email": "clare.miller@undefined.tv",
       "phone": "+1 (835) 535-3638",
       "address": "458 Grace Court, Topanga, Pennsylvania, 8973",
@@ -371,6 +378,7 @@ export const data = {
         "first": "Case",
         "last": "Williamson"
       },
+      "rating": 380,
       "email": "case.williamson@undefined.me",
       "phone": "+1 (985) 564-2092",
       "address": "850 Colin Place, Lookingglass, Maine, 8703",
@@ -416,6 +424,7 @@ export const data = {
         "first": "Valdez",
         "last": "Hatfield"
       },
+      "rating": 371,
       "email": "valdez.hatfield@undefined.biz",
       "phone": "+1 (938) 576-3592",
       "address": "596 King Street, Groveville, Massachusetts, 3770",
@@ -461,6 +470,7 @@ export const data = {
         "first": "Moran",
         "last": "Daugherty"
       },
+      "rating": 370,
       "email": "moran.daugherty@undefined.us",
       "phone": "+1 (906) 587-3467",
       "address": "459 Portal Street, Whipholt, South Dakota, 6227",
@@ -506,6 +516,7 @@ export const data = {
         "first": "Faulkner",
         "last": "Hurley"
       },
+      "rating": 357,
       "email": "faulkner.hurley@undefined.org",
       "phone": "+1 (911) 562-2279",
       "address": "346 Fayette Street, Smeltertown, Virgin Islands, 3813",
@@ -551,6 +562,7 @@ export const data = {
         "first": "Irene",
         "last": "Martinez"
       },
+      "rating": 350,
       "email": "irene.martinez@undefined.biz",
       "phone": "+1 (930) 594-3145",
       "address": "416 Hill Street, Lowgap, Mississippi, 6756",
@@ -596,6 +608,7 @@ export const data = {
         "first": "Nita",
         "last": "Fitzpatrick"
       },
+      "rating": 341,
       "email": "nita.fitzpatrick@undefined.io",
       "phone": "+1 (957) 576-2814",
       "address": "546 Willmohr Street, Kilbourne, Hawaii, 5736",
@@ -641,6 +654,7 @@ export const data = {
         "first": "Alta",
         "last": "Gallagher"
       },
+      "rating": 333,
       "email": "alta.gallagher@undefined.com",
       "phone": "+1 (866) 463-2598",
       "address": "587 Cooke Court, Eagletown, Missouri, 821",
@@ -686,6 +700,7 @@ export const data = {
         "first": "Roseann",
         "last": "Melton"
       },
+      "rating": 331,
       "email": "roseann.melton@undefined.ca",
       "phone": "+1 (992) 465-3643",
       "address": "565 Woodbine Street, Ladera, Wyoming, 5588",
@@ -731,6 +746,7 @@ export const data = {
         "first": "Estella",
         "last": "Meadows"
       },
+      "rating": 325,
       "email": "estella.meadows@undefined.net",
       "phone": "+1 (858) 408-3087",
       "address": "204 Sheffield Avenue, Elbert, Alaska, 8417",
@@ -776,6 +792,7 @@ export const data = {
         "first": "Hodge",
         "last": "Mooney"
       },
+      "rating": 317,
       "email": "hodge.mooney@undefined.info",
       "phone": "+1 (921) 433-2455",
       "address": "417 Gates Avenue, Washington, Palau, 8236",
@@ -821,6 +838,7 @@ export const data = {
         "first": "Noble",
         "last": "Fischer"
       },
+      "rating": 301,
       "email": "noble.fischer@undefined.name",
       "phone": "+1 (885) 429-2039",
       "address": "637 Front Street, Coultervillle, Rhode Island, 1394",
@@ -866,6 +884,7 @@ export const data = {
         "first": "Sharron",
         "last": "Hartman"
       },
+      "rating": 299,
       "email": "sharron.hartman@undefined.tv",
       "phone": "+1 (967) 410-3045",
       "address": "226 Atlantic Avenue, Cade, Iowa, 3798",
@@ -911,6 +930,7 @@ export const data = {
         "first": "Franks",
         "last": "Sanders"
       },
+      "rating": 285,
       "email": "franks.sanders@undefined.me",
       "phone": "+1 (879) 428-2031",
       "address": "131 Village Court, Basye, Nevada, 3117",
@@ -956,6 +976,7 @@ export const data = {
         "first": "Willis",
         "last": "Orr"
       },
+      "rating": 275,
       "email": "willis.orr@undefined.biz",
       "phone": "+1 (964) 453-3549",
       "address": "277 Grant Avenue, Villarreal, Oregon, 7312",
@@ -1001,6 +1022,7 @@ export const data = {
         "first": "Preston",
         "last": "Pollard"
       },
+      "rating": 264,
       "email": "preston.pollard@undefined.us",
       "phone": "+1 (952) 518-3451",
       "address": "253 Woodruff Avenue, Grill, Maryland, 8658",
@@ -1046,6 +1068,7 @@ export const data = {
         "first": "Warner",
         "last": "Roach"
       },
+      "rating": 261,
       "email": "warner.roach@undefined.org",
       "phone": "+1 (834) 407-2719",
       "address": "277 Channel Avenue, Brethren, Montana, 449",
@@ -1091,6 +1114,7 @@ export const data = {
         "first": "Nikki",
         "last": "Acevedo"
       },
+      "rating": 254,
       "email": "nikki.acevedo@undefined.biz",
       "phone": "+1 (833) 412-2233",
       "address": "166 Bragg Street, Hayes, Colorado, 6966",
@@ -1136,6 +1160,7 @@ export const data = {
         "first": "Webster",
         "last": "Lee"
       },
+      "rating": 247,
       "email": "webster.lee@undefined.io",
       "phone": "+1 (899) 585-3488",
       "address": "258 Diamond Street, Greensburg, New Hampshire, 9263",
@@ -1181,6 +1206,7 @@ export const data = {
         "first": "Jones",
         "last": "James"
       },
+      "rating": 242,
       "email": "jones.james@undefined.com",
       "phone": "+1 (996) 498-3455",
       "address": "694 Hull Street, Jennings, Florida, 675",
@@ -1226,6 +1252,7 @@ export const data = {
         "first": "Josie",
         "last": "Gay"
       },
+      "rating": 241,
       "email": "josie.gay@undefined.ca",
       "phone": "+1 (806) 472-3088",
       "address": "341 Gardner Avenue, Rockingham, Arkansas, 7528",
@@ -1271,6 +1298,7 @@ export const data = {
         "first": "Maureen",
         "last": "Ramsey"
       },
+      "rating": 235,
       "email": "maureen.ramsey@undefined.net",
       "phone": "+1 (963) 471-2120",
       "address": "689 Kent Street, Retsof, Alabama, 2871",
@@ -1316,6 +1344,7 @@ export const data = {
         "first": "Phelps",
         "last": "Mcfarland"
       },
+      "rating": 225,
       "email": "phelps.mcfarland@undefined.info",
       "phone": "+1 (894) 537-3565",
       "address": "140 Pine Street, Hanover, Kentucky, 6720",
@@ -1351,4 +1380,3 @@ export const data = {
       ]
     }
   ]
-}
