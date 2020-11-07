@@ -4,7 +4,7 @@ export const data = {
       "id": "5fa69d80ffdd8589ae52c498",
       "isActive": false,
       "balance": 2600,
-      "picture": "http://placehold.it/32x32",
+      "picture": "http://s.ekabu.ru/localStorage/post/55/b3/dd/91/55b3dd91_resizedScaled_740to740.jpg",
       "age": 21,
       "role": "student",
       "name": {
@@ -50,7 +50,7 @@ export const data = {
       "id": "5fa69d80c8ea8712e242ce6b",
       "isActive": true,
       "balance": 1463,
-      "picture": "http://placehold.it/32x32",
+      "picture": "https://mtdata.ru/u27/photo30EF/20359649291-0/original.jpg",
       "age": 22,
       "role": "student",
       "name": {
@@ -96,7 +96,7 @@ export const data = {
       "id": "5fa69d8015b5411ebe57daa1",
       "isActive": true,
       "balance": 2550,
-      "picture": "http://placehold.it/32x32",
+      "picture": "https://img4.goodfon.ru/original/1024x1024/a/7b/devushka-shatenka-pricheska-makiiazh-litso-krupnym-planom-vz.jpg",
       "age": 25,
       "role": "student",
       "name": {
@@ -142,7 +142,7 @@ export const data = {
       "id": "5fa69d8004951a9f9ba1b5b5",
       "isActive": false,
       "balance": 2995,
-      "picture": "http://placehold.it/32x32",
+      "picture": "https://data.whicdn.com/images/313218875/original.jpg",
       "age": 17,
       "role": "student",
       "name": {
@@ -188,7 +188,7 @@ export const data = {
       "id": "5fa69d80930687df65565dc1",
       "isActive": false,
       "balance": 3596,
-      "picture": "http://placehold.it/32x32",
+      "picture": "https://cdn.fifi.ru/person/origin/billy-vandendooren.jpg",
       "age": 22,
       "role": "student",
       "name": {
@@ -234,7 +234,7 @@ export const data = {
       "id": "5fa69d801fcc99fb98f5038e",
       "isActive": false,
       "balance": 2111,
-      "picture": "http://placehold.it/32x32",
+      "picture": "https://i.pinimg.com/736x/55/85/27/55852736a1135ce4bbe53b4402e2d899--model-polaroids-hot-male-models.jpg",
       "age": 22,
       "role": "student",
       "name": {
@@ -280,7 +280,7 @@ export const data = {
       "id": "5fa69d8048fb013fdf291f73",
       "isActive": false,
       "balance": 3086,
-      "picture": "http://placehold.it/32x32",
+      "picture": "https://valuyki.present4man.ru/upload/iblock/d9b/d9bf7fcb15623fc82ff56f05f83f25e9.jpg",
       "age": 21,
       "role": "student",
       "name": {
@@ -326,7 +326,7 @@ export const data = {
       "id": "5fa69d809a0814ceefe25846",
       "isActive": false,
       "balance": 2848,
-      "picture": "http://placehold.it/32x32",
+      "picture": "https://cache3.youla.io/files/images/780_780/5b/e6/5be6c798eef141ba181b8de4.jpg",
       "age": 20,
       "role": "student",
       "name": {
@@ -372,7 +372,7 @@ export const data = {
       "id": "5fa69d80f42ba21a1c9f090d",
       "isActive": false,
       "balance": 1043,
-      "picture": "http://placehold.it/32x32",
+      "picture": "https://i.siteapi.org/cl6x9Udw8y32gNv2BlBVmFSOvio=/fit-in/1024x768/center/top/8cf635ec147d749.s.siteapi.org/img/dzo70tga8hcs808sck0ko0w4ocwgs0",
       "age": 17,
       "role": "student",
       "name": {
@@ -418,7 +418,7 @@ export const data = {
       "id": "5fa69d8067321d2b46a94f5f",
       "isActive": true,
       "balance": 3937,
-      "picture": "http://placehold.it/32x32",
+      "picture": "https://gazette.education.govt.nz/assets/VOLUME-96-ISSUE-9/web-youth-hub.jpg",
       "age": 23,
       "role": "student",
       "name": {
