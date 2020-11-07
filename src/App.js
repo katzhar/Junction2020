@@ -67,30 +67,27 @@ function App() {
             <Route>
               <Header path="/:path" />
               <div className={styles.container}>
-              <LeftMenu/>
-              <Route exact path="/signIn">
-                <SignIn />
-              </Route>
-              <Route exact path="/main">
-                <Main />
-              </Route>
-<<<<<<< Updated upstream
-              <Route exact path="/rating">
-                <Rating />
-              </Route>
-              <Route exact path="/activity">
-                <Activity/>
-            </Route>
+                <LeftMenu/>
+                <Route exact path="/signIn">
+                  <SignIn />
+                </Route>
+                <Route exact path="/main">
+                  <Main />
+                </Route>
+                <Route exact path="/rating">
+                  <Rating />
+                </Route>
+                <Route exact path="/activity">
+                  <Activity/>
+                </Route>
+                <Route exact path="/dialogs">
+                  <Dialogs title="Диалоги" />
+                </Route>
+                <Route path="/chat/:id">
+                  <Chat />
+                </Route>
               </div>
-=======
-              <Route exact path="/dialogs">
-                <Dialogs title="Диалоги" />
-              </Route>
-              <Route path="/chat/:id">
-                <Chat />
-              </Route>
               {sessionStorage.getItem('x-auth-token') && <Widget />}
->>>>>>> Stashed changes
             </Route>
           </Switch>
       )}
