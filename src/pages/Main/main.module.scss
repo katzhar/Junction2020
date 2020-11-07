@@ -1,3 +1,62 @@
-.right{
+.fullWidth {
   width: 100%;
+}
+
+.line {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1150px) {
+  svg {
+    width: 300px;
+    height: 300px;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  svg {
+    width: 250px;
+    height: 250px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  svg {
+    width: 200px;
+    height: 200px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
 }

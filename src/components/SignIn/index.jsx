@@ -17,7 +17,10 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: '#1891ff',
+  },
+  icon: {
+    backgroundColor: '#1891ff',
   },
   typography: {
     fontFamily: 'Montserrat',
@@ -84,7 +87,7 @@ export default function SignIn() {
   return (
     <div className={`${classes.paper} form__block form__block-signIn`}>
       <Avatar className={classes.avatar}>
-        <LockOutlinedIcon />
+        <LockOutlinedIcon className={classes.icon} />
       </Avatar>
       <Typography className={classes.typography} component="h1" variant="h5">
         Sign In
