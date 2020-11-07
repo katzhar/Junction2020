@@ -31,23 +31,18 @@ function App() {
   console.log(localStorage.getItem('data'));
 
   let token = sessionStorage.getItem('x-auth-token');
-
-  const initUserAction = React.useCallback(() => {
-    token && 
-    Object.keys(data).map(item => {
-      localStorage.setItem(item, data[item]);
-    });
-  }, [token]);
+  // const initUserAction = React.useCallback(() => {
+  //   token && 
+  //   Object.keys(data).map(item => {
+  //     localStorage.setItem(item, JSON.stringify(data[item]));
+  //   });
+  // }, [token]);
 
   React.useEffect(() => {
     if (token) {
       history.push('/main');
     }
   }, [history, auth]);
-
-  React.useEffect(() => {
-    if (sessionStorage.getItem('x-auth-token')) initUserAction();
-  }, [initUserAction]);
 
   return (
     <main id="main">
@@ -64,12 +59,12 @@ function App() {
       ) : (
           <Switch>
             <Route exact path="/">
-              <Login />
+              <Login isLoggedIn={token} />
             </Route>
             <Route>
               <Header path="/:path" />
               <Route exact path="/signIn">
-                <SignIn />
+                <SignIn isLoggedIn={token} />
               </Route>
               {token && (
                 <>

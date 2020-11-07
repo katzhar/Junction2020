@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { fetchAuth } from '../../store/actions';
+import { useHistory } from 'react-router-dom';
 
 import { Avatar, Typography, Grid } from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
@@ -27,9 +28,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignIn() {
+export default function SignIn({ isLoggedIn }) {
   const classes = useStyles();
   const dispatch = useDispatch();
+  const history = useHistory();
+
+  isLoggedIn && history.push('/main');
 
   const actionSignIn = useCallback(
     (mail, password, loadingText) => {
