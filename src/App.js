@@ -38,7 +38,7 @@ function App() {
   }, [token]);
 
   React.useEffect(() => {
-    if (auth.success === true) {
+    if (token) {
       history.push('/main');
     }
   }, [history, auth]);
@@ -69,7 +69,7 @@ function App() {
               <Route exact path="/signIn">
                 <SignIn />
               </Route>
-              {sessionStorage.getItem('x-auth-token') && (
+              {token && (
                 <>
                   <div className={styles.container}>
                     <LeftMenu/>
