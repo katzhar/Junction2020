@@ -1,7 +1,8 @@
 import React from 'react';
-import './activity.scss';
+import './activity.module.scss';
 import { Tabs } from 'antd';
-import Block from '../../components/Block'
+import Block from '../../components/Block';
+import styles from './activity.module.scss';
 
 export default function Activity() {
 
@@ -19,18 +20,19 @@ export default function Activity() {
 
   const { TabPane } = Tabs;
   return (
-    <Tabs type="card" defaultActiveKey="1">
-      <TabPane tab="Training" key="1">
         <Tabs defaultActiveKey="1">
           <TabPane tab="Webinar" key="1">
+            <div className={styles.blocks}>
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
+            </div>
           </TabPane>
           <TabPane tab="Peer-to-Peer" key="2">
+          <div>
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
@@ -39,12 +41,10 @@ export default function Activity() {
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
+          </div>
           </TabPane>
-        </Tabs>
-      </TabPane>
-      <TabPane tab="Еntertainment" key="2">
-        <Tabs defaultActiveKey="1">
-          <TabPane tab="Events" key="1">
+          <TabPane tab="Events" key="3">
+          <div>
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
@@ -55,17 +55,18 @@ export default function Activity() {
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
+          </div>
           </TabPane>
-          <TabPane tab="Private lessons" key="2">
+          <TabPane tab="Private lessons" key="4">
+          <div>
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
             <Block data={data} />
+          </div>
           </TabPane>
-        </Tabs>
-      </TabPane>
     </Tabs>
   );
 }
