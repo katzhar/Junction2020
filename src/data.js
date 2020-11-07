@@ -6045,5 +6045,39 @@ export const data = {
       }
     ],
   },
-
+  "messages": {
+    1: [
+      {
+        uidSender: "5fa69d80ffdd8589ae52c498",
+        message: "Hi everyone",
+      },
+      {
+        uidSender: "5fa69d80c8ea8712e242ce6b",
+        message: "Hi, Tania",
+      },
+      {
+        uidSender: "5fa69d80c8ea8712e242ce6b",
+        message: "How are you?",
+      },
+      {
+        uidSender: "5fa69d80ffdd8589ae52c498",
+        message: "I'm fine, thank you",
+      },
+      {
+        uidSender: "5fa69d80ffdd8589ae52c498",
+        message: "I want to start a physics club. How do you like this idea?",
+      },
+      {
+        uidSender: "5fa69d8015b5411ebe57daa1",
+        message: "Hi, Tania. It's great idea!",
+      },
+    ]
+  },
+  "dialogs": {
+    General: {
+      chatID: 1,
+      lastMessage: false,
+      avatar: null,
+    }
+  }
 }

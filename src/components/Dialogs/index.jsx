@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from "react-redux";
-import { fetchInitDialogs } from "../../store/Dialogs/actions";
+import { fetchInitDialogs } from "../../store/actions";
 import { DialogItem } from './DialogItem';
 import styles from './Dialogs.module.scss';
 
@@ -20,9 +20,9 @@ const Dialogs = ({ title, onClick }) => {
   return (
     <div className={styles.Dialog} onClick={onClick}>
       {title && <h2>{title}</h2>}
-      {Array.isArray(dialogs) && dialogs.length && dialogs.map((item) => {
-        return <DialogItem key={item.uid} dialog={item} />;
-      })}
+      {dialogs ? Object.keys(dialogs).map((key) => {
+        return <DialogItem key={dialogs[key].chatID} name={key} dialog={dialogs[key]} />;
+      }) : 'You have no dialogues'}
     </div>
   )
 }
