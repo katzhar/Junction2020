@@ -1,0 +1,20 @@
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.study {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
