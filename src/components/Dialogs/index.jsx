@@ -20,8 +20,8 @@ const Dialogs = ({ title, onClick }) => {
   return (
     <div className={styles.Dialog} onClick={onClick}>
       {title && <h2>{title}</h2>}
-      {Array.isArray(dialogs) && dialogs.length ? dialogs.map((item) => {
-        return <DialogItem key={item.uid} dialog={item} />;
+      {dialogs ? Object.keys(dialogs).map((key) => {
+        return <DialogItem key={dialogs[key].chatID} name={key} dialog={dialogs[key]} />;
       }) : 'You have no dialogues'}
     </div>
   )

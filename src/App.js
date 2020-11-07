@@ -28,8 +28,6 @@ function App() {
   const user = useSelector((store) => store.user);
   const auth = useSelector((store) => store.auth);
 
-  console.log(localStorage.getItem('data'));
-
   let token = sessionStorage.getItem('x-auth-token');
   // const initUserAction = React.useCallback(() => {
   //   token && 
@@ -39,7 +37,7 @@ function App() {
   // }, [token]);
 
   React.useEffect(() => {
-    if (token) {
+    if (token && history.pathname === '/signIn') {
       history.push('/main');
     }
   }, [history, auth]);
