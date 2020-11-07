@@ -4,6 +4,8 @@ import iconPtP from '../../assets/ptp.png';
 import iconBooks from '../../assets/book.png';
 import iconFilm from '../../assets/film.png';
 import iconEvent from '../../assets/events.png';
+import iconLessons from '../../assets/lessons.png';
+import iconWebinar from '../../assets/webinar.png';
 
 export default function Block({ data }) {
   const zoom = 'https://us04web.zoom.us/j/78292546724?pwd=a25Yc1F1YnJJL3RoVnVoejBrcmdlUT09';
@@ -14,6 +16,8 @@ export default function Block({ data }) {
    book: iconBooks,
   film: iconFilm,
    ptp: iconPtP,
+   lessons: iconLessons,
+   webinar: iconWebinar,
  }
 
   return (
