@@ -1,8 +1,13 @@
 import React from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
+<<<<<<< HEAD
+import { useSelector } from 'react-redux';
+=======
 import { useDispatch, useSelector } from 'react-redux';
+>>>>>>> feature-rr
 import { data } from './data';
 import 'antd/dist/antd.css';
+import styles from './app.module.scss';
 
 import {
   Login,
@@ -12,8 +17,16 @@ import {
 } from './components/index';
 
 import {
+<<<<<<< HEAD
+  Main,
+  Rating,
+} from './pages/index';
+import Activity from './pages/Activity';
+import LeftMenu from './components/LeftMenu';
+=======
   Main
 } from './pages/index';
+>>>>>>> feature-rr
 
 function App() {
   const history = useHistory();
@@ -58,12 +71,21 @@ function App() {
             </Route>
             <Route>
               <Header path="/:path" />
+              <div className={styles.container}>
+              <LeftMenu/>
               <Route exact path="/signIn">
                 <SignIn />
               </Route>
               <Route exact path="/main">
                 <Main />
               </Route>
+              <Route exact path="/rating">
+                <Rating />
+              </Route>
+              <Route exact path="/activity">
+                <Activity/>
+            </Route>
+              </div>
             </Route>
           </Switch>
       )}
