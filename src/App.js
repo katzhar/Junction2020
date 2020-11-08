@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { Button, notification } from 'antd';
 
-import { data } from './data';
 import 'antd/dist/antd.css';
 import styles from './app.module.scss';
 
@@ -36,6 +36,19 @@ function App() {
   //   });
   // }, [token]);
 
+  const openNotification = () => {
+    notification.open({
+      message: 'Recommendations',
+      description:
+        'Step away from the computer for a while. ' +
+        'Open windows. ' +
+        'Make a charging.',
+      onClick: () => {
+        console.log('Notification Clicked!');
+      },
+    });
+  };
+  setInterval(() => openNotification(), 90000);
   React.useEffect(() => {
     if (token && history.pathname === '/signIn') {
       history.push('/main/5fa69d80ffdd8589ae52c498');
