@@ -30,6 +30,7 @@
 .left{
   width: 70%;
   padding: 10px;
+  justify-content: space-between;
 }
 
 .containerIcon{
@@ -43,4 +44,13 @@
   display: inline;
   width: 20px;
   height: 20px;
+}
+
+.sub{
+  height: 20%;
+  color: #838893;
+}
+
+.preSub{
+  height: 80%;
 }
