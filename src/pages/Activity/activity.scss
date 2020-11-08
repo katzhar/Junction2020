@@ -1,0 +1,9 @@
+.ant-tabs {
+  overflow: visible;
+  width: calc(100% - 200px);
+}
+
+.ant-tabs > .ant-tabs-nav,
+.ant-tabs > div > .ant-tabs-nav {
+  padding-left: 20px;
+}
