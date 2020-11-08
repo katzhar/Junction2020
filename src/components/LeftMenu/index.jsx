@@ -18,9 +18,6 @@ export default function LeftMenu() {
       <NavLink activeClassName={styles.active} to="/dialogspsycho">
         Psychological help
       </NavLink>
-      <NavLink activeClassName={styles.active} to="/testing">
-        Testing (beta)
-      </NavLink>
     </div>
   );
 }
