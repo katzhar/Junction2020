@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 1150px) {
-  svg {
+  canvas {
     width: 300px;
     height: 300px;
   }
@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 800px) {
-  svg {
+  canvas {
     width: 250px;
     height: 250px;
   }
@@ -43,7 +43,7 @@
 }
 
 @media screen and (max-width: 550px) {
-  svg {
+  canvas {
     width: 100px;
     height: 100px;
   }
