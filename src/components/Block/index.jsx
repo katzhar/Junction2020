@@ -7,7 +7,7 @@ import iconEvent from '../../assets/events.png';
 import iconLessons from '../../assets/lessons.png';
 import iconWebinar from '../../assets/webinar.png';
 import iconCoin from '../../assets/coin.png';
-import { Button } from 'antd';
+import { Button, notification } from 'antd';
 
 export default function Block({ data }) {
   const [subscribe, setSubscribe] = useState(false);
@@ -21,6 +21,21 @@ console.log(data);
    ptp: iconPtP,
    lessons: iconLessons,
    webinar: iconWebinar,
+ }
+
+  const openNotification = () => {
+    const args = {
+      message: 'New event',
+      description:
+        'You have successfully signed up for the event!',
+      duration: 0,
+    };
+    notification.open(args);
+  };
+
+ const  setSubscribeEvent = () =>{
+   setSubscribe(!subscribe);
+   openNotification();
  }
 
   return (
@@ -40,7 +55,7 @@ console.log(data);
         </div>
       </div>
         <div className={styles.sub}>
-        {!subscribe ? <Button onClick={()=>{setSubscribe(!subscribe)}}>subscribe</Button> : <span>You are signed in</span>}
+        {!subscribe ? <Button onClick={()=>{setSubscribeEvent()}}>subscribe</Button> : <span>You are signed in</span>}
         </div>
       </div>
         <div className={styles.right}>

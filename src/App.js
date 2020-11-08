@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { Button, notification } from 'antd';
 
-import { data } from './data';
 import 'antd/dist/antd.css';
 import styles from './app.module.scss';
 
@@ -22,6 +22,7 @@ import {
 } from './pages/index';
 import Activity from './pages/Activity';
 import LeftMenu from './components/LeftMenu';
+import Psycho from './pages/Psycho';
 
 function App() {
   const history = useHistory();
@@ -36,6 +37,19 @@ function App() {
   //   });
   // }, [token]);
 
+  const openNotification = () => {
+    notification.open({
+      message: 'Recommendations',
+      description:
+        'Step away from the computer for a while. ' +
+        'Open windows. ' +
+        'Make a charging.',
+      onClick: () => {
+        console.log('Notification Clicked!');
+      },
+    });
+  };
+  setInterval(() => openNotification(), 90000);
   React.useEffect(() => {
     if (token && history.pathname === '/signIn') {
       history.push('/main/5fa69d80ffdd8589ae52c498');
@@ -76,6 +90,9 @@ function App() {
                     </Route>
                     <Route exact path="/activity">
                       <Activity/>
+                    </Route>
+                    <Route exact path="/dialogspsycho">
+                      <Psycho/>
                     </Route>
                     <Route exact path="/dialogs">
                       <Dialogs title="Диалоги" />

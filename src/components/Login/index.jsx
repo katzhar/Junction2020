@@ -10,7 +10,7 @@ export default function Login({ isLoggedIn }) {
             <div className="login__header">
                 <h1>
                     Welcome to 
-                    <span className="login__header_high bold">Hack</span>
+                    <span className="login__header_high bold">OYM</span>
                     <span className="login__header_small bold">study, chat, connect.</span>
                 </h1>
             </div>

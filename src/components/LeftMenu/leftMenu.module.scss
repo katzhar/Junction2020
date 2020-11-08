@@ -1,7 +1,8 @@
 /* Position and sizing of burger button */
 .container {
   padding-top: 20px;
-  width: 200px;
+  padding-left: 25px;
+  width: 260px;
   display: flex;
   flex-direction: column;
   border-right: 1px solid #c7c6c6;
@@ -16,6 +17,7 @@
       color: #3d2727;
     }
     margin: 10px;
+    font-size: 1.5rem;
   }
 }
 

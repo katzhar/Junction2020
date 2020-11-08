@@ -1,0 +1,41 @@
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.psychoContent {
+  position: relative;
+  width: calc(100% - 260px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.psychoInfo {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 600px;
+}
+
+.psychoTitle {
+  color: #1890ff;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+.psychoText {
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+}
