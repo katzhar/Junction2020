@@ -31,7 +31,7 @@ export const ChatForm = ({ chat }) => {
           <input className={styles.messageInput} placeholder="Введите сообщение" type='text' value={value} onChange={(e) => setValue(e.target.value)} />
         </div>
         <div className={styles.buttonContainer}>
-          <Button type="submit" onClick={handleSendMessage} text="Отправить" subClass="submit" />
+          <Button type="submit" onClick={handleSendMessage} text="Отправить" subClass="change-action" />
         </div>
       </div>
     </form>
