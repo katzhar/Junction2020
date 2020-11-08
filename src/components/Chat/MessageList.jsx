@@ -11,7 +11,7 @@ export const MessageList = ({messages, chat}) => {
       let myMessage = item.uidSender === "5fa69d80ffdd8589ae52c498";
       data.users.map(user => {
         if (user.id === item.uidSender)
-          name = `${user.name.first} ${user.name.last}`;
+          name = user.name;
         return null;
       });
       return (

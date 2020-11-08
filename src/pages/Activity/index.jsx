@@ -4,6 +4,7 @@ import { Tabs } from 'antd';
 import Block from '../../components/Block';
 import styles from './activity.module.scss';
 import { data } from '../../data';
+import './activity.scss';
 
 export default function Activity() {
 const [newData, setNewData] = useState({
