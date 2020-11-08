@@ -18,8 +18,14 @@ const [newData, setNewData] = useState({
       let users = localData.users;
       let events = localData.scienceEvents.Consultations;
       let tmpData = events.map((item) => {
-        let user = users.filter(i => i.id === item.organazierId)
-        return{...item, user}
+        let user = users.filter(i => i.id === item.organazierId);
+
+         let participants = (item.participants) ? item.participants.map((participant)=>{
+           return users[participant];
+         }): null;
+
+
+        return{...item,user,participants}
       })
      let tmp =  {
         webinar: [],

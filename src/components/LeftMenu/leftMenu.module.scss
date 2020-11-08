@@ -6,8 +6,24 @@
   flex-direction: column;
   border-right: 1px solid #c7c6c6;
   align-items: center;
+  .active{
+    color: #3d2727;
+    animation: flash 5.5s linear;
+  }
 }
 
 a{
+  &:hover{
+    color: #3d2727;
+  }
   margin: 10px;
+}
+
+@keyframes flash {
+  0% {
+    color: #335c8d;
+  }
+  100% {
+    color: #3d2727;
+  }
 }
