@@ -19,13 +19,11 @@ const [newData, setNewData] = useState({
       let events = localData.scienceEvents.Consultations;
       let tmpData = events.map((item) => {
         let user = users.filter(i => i.id === item.organazierId);
-
          let participants = (item.participants) ? item.participants.map((participant)=>{
            return users[participant];
          }): null;
-
-
-        return{...item,user,participants}
+         let price =Math.floor( Math.random() * (300 - 50) + 50);
+        return{...item,user,participants, price}
       })
      let tmp =  {
         webinar: [],
