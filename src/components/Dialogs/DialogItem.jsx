@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from "./Dialogs.module.scss";
 
 export const DialogItem = ({ name, dialog }) => {
+  console.log(dialog);
   return (
     <Link to={`/chat/${dialog.chatID}`} className={styles.DialogItem}>
       <div className={styles.DialogImage}>
@@ -13,7 +14,7 @@ export const DialogItem = ({ name, dialog }) => {
       </div>
       <div className={styles.DialogContent}>
         <div className={styles.CompanionName}>{name}</div>
-        <div className={styles.LastMessage}>{dialog.lastMessage || 'Начните диалог'}</div>
+        <div className={styles.LastMessage}>{dialog.lastMessage || 'Start a dialogue'}</div>
       </div>
     </Link>
   );

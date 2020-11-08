@@ -5992,7 +5992,7 @@ export const data = {
     General: {
       chatID: 1,
       lastMessage: false,
-      avatar: null,
+      avatar: "https://casablancadreams.com/assets/user/img/chat%20home.png",
     }
   }
 }
