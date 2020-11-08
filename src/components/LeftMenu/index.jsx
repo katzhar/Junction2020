@@ -16,7 +16,7 @@ export default function LeftMenu() {
      Rating
       </NavLink>
       <NavLink activeClassName={styles.active} to="/dialogspsycho">
-        Psychological help
+        Mental Health
       </NavLink>
     </div>
   );
