@@ -15,6 +15,7 @@
 
 .middle{
   display: flex;
+  height: 100%;
   flex-direction: row;
 }
 
@@ -47,10 +48,11 @@
 }
 
 .sub{
-  height: 20%;
+  height: 15%;
   color: #838893;
 }
 
 .preSub{
-  height: 80%;
+  overflow: scroll;
+  height: 85%;
 }
