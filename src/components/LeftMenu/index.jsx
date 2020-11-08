@@ -13,7 +13,7 @@ export default function LeftMenu() {
        Activity
       </Link>
       <Link to="/rating">
-     Rating
+        Rating
       </Link>
       <Link to="/dialogspsycho">
         Psychological help
