@@ -1,19 +1,23 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { data } from '../../data';
 import { Table, Tag} from 'antd';
-import Text from 'antd/lib/typography/Text';
+import styles from './rating.module.scss';
 
 const columns = [
   {
-    title: 'place',
+    title: 'Place',
     dataIndex: 'key',
     key: 'key',
-    render: text => <a>{text}</a>
   },
   {
     title: 'User',
-    dataIndex: 'name',
-    key: 'name',
+    dataIndex: ['name', 'id'],
+    key: 'key',
+      render: (name , item) => 
+      <Link to={`/main/${item.id}`}>
+       {item.name}
+      </Link>
   },
   {
     title: 'Scores',
@@ -51,7 +55,7 @@ class Rating extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className={styles.table}>
         <Table
           columns={columns}
           dataSource={data.users}

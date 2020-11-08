@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 const ProfileInfo = () => {
     const location = useParams();
     let index;
+    console.log(location.id);
     data.users.forEach((user, i) => {
         if (user.id === location.id) {
             index = i;
@@ -21,7 +22,7 @@ const ProfileInfo = () => {
                 <img src={user.picture} alt="avatar"/>
             </div>
             <div className={styles.info}>
-                <h3>{user.name.first}</h3>
+                <h3>{user.name}</h3>
                 <p>Money: {user.balance}</p>
                 <p>Rating: {user.rating}</p>
                 <p>Course: {user.educationYear}</p>

@@ -82,8 +82,8 @@ const ProfileSkills = () => {
 
     return (
         <div className={styles.skillsContainer}>
-            <div>{chart1}</div>
-            <div>{chart2}</div>
+            <div className={styles.GraphItem}>{chart1}</div>
+            <div className={styles.GraphItem}>{chart2}</div>
         </div>
     );
 };

@@ -38,7 +38,7 @@ function App() {
 
   React.useEffect(() => {
     if (token && history.pathname === '/signIn') {
-      history.push('/main');
+      history.push('/main/5fa69d80ffdd8589ae52c498');
     }
   }, [history, auth]);
 

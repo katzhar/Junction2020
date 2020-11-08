@@ -33,7 +33,7 @@ export default function SignIn({ isLoggedIn }) {
   const dispatch = useDispatch();
   const history = useHistory();
 
-  isLoggedIn && history.push('/main');
+  isLoggedIn && history.push('/main/5fa69d80ffdd8589ae52c498');
 
   const actionSignIn = useCallback(
     (mail, password, loadingText) => {

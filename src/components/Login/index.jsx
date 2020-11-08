@@ -17,7 +17,7 @@ export default function Login({ isLoggedIn }) {
             <div className="login__main">
                 <div className="login__action">
                     <Button type="facebook" subClass="facebook" href="/signIn/facebook" text="Continue with Facebook"/>
-                    <Button type="mail" subClass="mail" href={isLoggedIn ? "/main" : "/signIn"} text="SignIn with Mail"/>
+                    <Button type="mail" subClass="mail" href={isLoggedIn ? '/main/5fa69d80ffdd8589ae52c498' : "/signIn"} text="SignIn with Mail"/>
                     <div className="login__alt">
                         Not able to login?
                         <Link to='/' className="red-link">

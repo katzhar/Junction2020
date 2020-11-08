@@ -6,6 +6,10 @@
   opacity: 0.5;
 }
 
+.Content {
+  width: calc(100% - 200px);
+}
+
 @media screen and (max-width: 1150px) {
   canvas {
     width: 300px;
