@@ -13,7 +13,25 @@ const columns = [
     title: 'User',
     dataIndex: 'id',
     key: 'id',
-    render: text => <Link to={text}>{text}</Link>
+    render: tags => (
+      <span>
+        {tags.map(tag => {
+          let color = tag.length > 6 ? 'geekblue' : 'green';
+          if (tag === 'art') {
+            color = 'volcano';
+          }
+          if (tag === 'history') {
+            color = 'orange';
+          }
+          return (
+            <Tag color={color} key={tag}>
+              {tag.toUpperCase()}
+            </Tag>
+          );
+        })}
+      </span>
+    ),
+    render: text => <Link to={`/main/${text}`}>hello</Link>
   },
   {
     title: 'Scores',
