@@ -22,6 +22,7 @@ import {
 } from './pages/index';
 import Activity from './pages/Activity';
 import LeftMenu from './components/LeftMenu';
+import Psycho from './pages/Psycho';
 
 function App() {
   const history = useHistory();
@@ -89,6 +90,9 @@ function App() {
                     </Route>
                     <Route exact path="/activity">
                       <Activity/>
+                    </Route>
+                    <Route exact path="/dialogspsycho">
+                      <Psycho/>
                     </Route>
                     <Route exact path="/dialogs">
                       <Dialogs title="Диалоги" />
