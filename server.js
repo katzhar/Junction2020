@@ -1,4 +1,5 @@
- const express = require('express');
+const dotenv = require('dotenv');
+const express = require('express');
  const port = process.env.PORT || 8080;
  
  const app = express();
@@ -9,5 +10,4 @@
  app.get('/*', function (req, res) {
  res.sendFile(path.join(__dirname, 'build', 'index.html'));
  });
- 
  app.listen(port);
