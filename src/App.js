@@ -38,7 +38,7 @@ function App() {
 
   React.useEffect(() => {
     if (token && history.pathname === '/signIn') {
-      history.push('/main');
+      history.push('/main/5fa69d80ffdd8589ae52c498');
     }
   }, [history, auth]);
 
@@ -68,7 +68,7 @@ function App() {
                 <>
                   <div className={styles.container}>
                     <LeftMenu/>
-                    <Route exact path="/main">
+                    <Route exact path="/main/:id">
                       <Main />
                     </Route>
                     <Route exact path="/rating">
