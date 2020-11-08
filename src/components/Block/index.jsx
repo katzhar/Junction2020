@@ -9,8 +9,8 @@ import iconWebinar from '../../assets/webinar.png';
 
 export default function Block({ data }) {
   const zoom = 'https://us04web.zoom.us/j/78292546724?pwd=a25Yc1F1YnJJL3RoVnVoejBrcmdlUT09';
- const {title ='', body='', price='', name = {first:'',last:''}, participants='', type = 'event' } = data;
-
+ const {title ='', body='', price='', user, participants='', type = 'event' } = data;
+console.log(data);
  const iconType = {
    event: iconEvent,
    book: iconBooks,
@@ -28,14 +28,13 @@ export default function Block({ data }) {
         <div>
           <div>link: <a href={zoom}>Zoom</a></div>
           {participants && <span>Participants: </span>}
-          {participants}
         </div>
       </div>
         <div className={styles.right}>
           <div className={styles.containerIcon}>
           <img src={iconType[type]} alt="" />
           </div>
-        <p>{name.first} {name.last}</p>
+        <p>{user[0].name}</p>
           <p>
             <span>Price:</span>{price}</p>
         </div>
