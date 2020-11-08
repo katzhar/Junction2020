@@ -5,33 +5,18 @@ import { Table, Tag} from 'antd';
 
 const columns = [
   {
-    title: 'place',
+    title: 'Place',
     dataIndex: 'key',
     key: 'key',
   },
   {
     title: 'User',
-    dataIndex: 'id',
-    key: 'id',
-    render: tags => (
-      <span>
-        {tags.map(tag => {
-          let color = tag.length > 6 ? 'geekblue' : 'green';
-          if (tag === 'art') {
-            color = 'volcano';
-          }
-          if (tag === 'history') {
-            color = 'orange';
-          }
-          return (
-            <Tag color={color} key={tag}>
-              {tag.toUpperCase()}
-            </Tag>
-          );
-        })}
-      </span>
-    ),
-    render: text => <Link to={`/main/${text}`}>hello</Link>
+    dataIndex: ['name', 'id'],
+    key: 'key',
+      render: (name , item) => 
+      <Link to={`/main/${item.id}`}>
+       {item.name}
+      </Link>
   },
   {
     title: 'Scores',
