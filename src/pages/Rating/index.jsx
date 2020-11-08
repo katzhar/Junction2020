@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { data } from '../../data';
 import { Table, Tag} from 'antd';
+import styles from './rating.module.scss';
 
 const columns = [
   {
@@ -54,7 +55,7 @@ class Rating extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className={styles.table}>
         <Table
           columns={columns}
           dataSource={data.users}
