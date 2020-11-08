@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { data } from '../../data';
 import { Table, Tag} from 'antd';
 import Text from 'antd/lib/typography/Text';
@@ -8,12 +9,12 @@ const columns = [
     title: 'place',
     dataIndex: 'key',
     key: 'key',
-    render: text => <a>{text}</a>
   },
   {
     title: 'User',
-    dataIndex: 'name',
-    key: 'name',
+    dataIndex: 'id',
+    key: 'id',
+    render: text => <Link to={text}>{text}</Link>
   },
   {
     title: 'Scores',
